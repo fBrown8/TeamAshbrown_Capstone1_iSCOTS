@@ -24,3 +24,33 @@ nav{
 .nav-link{
     margin: 0 13px;
 }
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #262626;
+    padding: 15px;
+}
+
+.footer-content img{
+    width: 15rem;
+    margin-left: 10px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.credits{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
