@@ -9,6 +9,7 @@ function validatePassword(){
     if(password.length != 0){
         if(password == confrmPassword){
             message.textContent = "Passwords Match"; 
+            alert("Success! You have successfully changed your password.")
             // message.style.color = "#26D054";
         }
         else{
