@@ -58,26 +58,28 @@ footer{
 /* body */
 
 
-.container{
-    max-width: 900px;
+.container-content{
+    max-width: 1300px;
     width: 100%;
+    padding-left: 130px;
 }
 
-.container hr{
+.container-content hr{
     height: 1px;
     color: #000000;
     background-color: #000000;
     border: none;
+    width: 100%;
 }
 
-.container .title{
+.container-content .title{
     font-family: 'Source Sans Pro';
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 26px;
 }
 
-.container h3{
+.container-content h3{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -86,13 +88,13 @@ footer{
     color: #000000;
 }
 
-.container form{
+.container-content form{
     max-width: 900px;
     width: 100%;
-    padding: 39px 30px;
+    padding: 25px 30px;
 }
 
-.container form .user-details, 
+.container-content form .user-details, 
 .change-password{
     display: flex;
     flex-wrap: wrap;
