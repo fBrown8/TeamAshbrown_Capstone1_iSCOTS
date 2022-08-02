@@ -16,6 +16,7 @@ header .leftArea{
 header .leftArea img{
 	width: 30%;
 	margin-top: -15px;
+	position: fixed;
 }
 
 .block{
@@ -121,7 +122,7 @@ label #menuBtn{
 }
 
 label #menuBtn:hover{
-	color: #fff;
+	color: #B48834;
 }
 
 #check:checked ~.sideBar {
