@@ -46,39 +46,48 @@
 	<div class = "titleBar">
 		<h1>Quick Access</h1>
 	</div>
- <!--Dashboard Cards-->
- <div class = "dashboard-cards">
-	 <div class = "cards-single">
-		 <div class = "cardbody">
-			 <h3>Welcome Admin!</h3>
-			 <p>You have <span>7</span> pending appointments today.</p>
-		 </div>
-	  </div>
- </div>
 	 <!--Bottom Cards-->
-	 <br>
-	 <div class="cardrow">
-		 <div class="cardcolumn">
-		   <div class="cardcontent">
-			 <h3>15</h3>
-			 <h4>Total Appointments</h4>
-		   </div>
-		 </div>
-	   
-		 <div class="cardcolumn">
-		   <div class="cardcontent">
-			 <h3>7</h3>
-			 <h4>Pending</h4>
-		   </div>
-		 </div>
-		 
-		 <div class="cardcolumn">
-		   <div class="cardcontent">
-			 <h3>8</h3>
-			 <h4>Completed</h4>
-		   </div>
-		 </div>
-	   </div>
+	<div class="row row-cols-1 row-cols-md-3 mb-5">
+		<div class="col mb-3">
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+				  <h5 class="card-title"><i class="fa-solid fa-user-group"></i> Account</h5>
+				  <p class="card-text text-muted">Manage all accounts. Add, delete, update, and more!</p>
+				  <a href="#" class="card-link">Manage Accounts</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-3">
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fa-solid fa-sitemap"></i> User Roles</h5>
+					<p class="card-text text-muted">Manage user types and roles for better access for all users.</p>
+					<a href="#" class="card-link">Manage User Roles</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col mb-3">
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fa-solid fa-users"></i> User Groups</h5>
+					<p class="card-text text-muted">Manage user groups according to their respective roles</p>
+					<a href="#" class="card-link">Manage User Groups</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col">
+			<div class="card" style="width: 18rem;">
+				<div class="card-body">
+					<h5 class="card-title"><i class="fa-solid fa-circle-question"></i> FAQs</h5>
+					<p class="card-text text-muted">Add Frequently Asked Questions and update the existing ones!</p>
+					<a href="#" class="card-link">Manage FAQs</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <!--CONTENT AREA END-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

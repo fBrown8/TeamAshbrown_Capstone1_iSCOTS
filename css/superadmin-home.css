@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -6,7 +6,7 @@
 
 header{
 	background-color: #262626;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	position: relative;
 	z-index: 2;
 }
@@ -18,7 +18,6 @@ header .leftArea{
 header .leftArea img{
 	width: 33%;
 	margin-top: -15px;
-	position: fixed;
 }
 
 .block{
@@ -159,14 +158,14 @@ label #menuBtn:hover{
 
 .content{
 	width: (100% - 250px);
-	margin-top: 60px;
+	margin-top: 10px;
 	padding: 20px;
 	margin-left: 250px;
 	transition: 0.5s;
 }
 
 #check:checked ~.content{
-	margin-left: 60px;
+	margin-left: 80px;
 }
 
 #check:checked ~ .sideBar .userInfo{
@@ -181,4 +180,25 @@ label #menuBtn:hover{
 .block{
     background-color: #B48834;
     height: 13px;
+}
+
+/* CONTENT CSS */
+.titleBar h1{
+	font-family: 'Source Sans Pro';
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.card-body a,
+.card-body h5,
+.card-body p{
+	font-family: 'Source Sans Pro';
+}
+
+.card-body h5{
+	font-weight: 600;
+}
+
+.card{
+	padding: 10px;
 }
