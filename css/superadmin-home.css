@@ -5,16 +5,18 @@
 }
 
 header{
-	background-color: #fff;
-	padding-bottom: 46px;
+	background-color: #262626;
+	padding-bottom: 50px;
+	position: relative;
+	z-index: 2;
 }
 
 header .leftArea{
-	margin-left: 50px;
+	margin-left: 60px;
 }
 
 header .leftArea img{
-	width: 30%;
+	width: 33%;
 	margin-top: -15px;
 	position: fixed;
 }
@@ -112,17 +114,17 @@ header .leftArea img{
 
 label #menuBtn{
 	z-index: 1;
-	color: black;
+	color: #fff;
 	position: fixed;
 	cursor: pointer;
 	font-size: 20px;
-	margin: 5px 25px;
+	margin: 10px 25px 0 25px;
 	transition: 0.5s;
 	transition-property: color;
 }
 
 label #menuBtn:hover{
-	color: #B48834;
+	color: #b48834;
 }
 
 #check:checked ~.sideBar {
@@ -174,4 +176,9 @@ label #menuBtn:hover{
 .active {
 	background-color: #B48834;
 	color: white;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
 }
