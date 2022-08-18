@@ -55,39 +55,39 @@
     
     <form onsubmit="false">
       <H3>CHANGE PASSWORD</H3>
-        <div class="change-password">
+      <div class="change-password">
 
-            <div class="input-box">
-                <span class="details">Current Password<span style="color: red;">*</span></span>
-                <input type="password" placeholder="Enter Current Password" required>
-            </div>
+        <div class="input-box">
+            <span class="details">Current Password<span style="color: red;">*</span></span>
+            <input type="password" placeholder="Enter Current Password" required>
+        </div>
 
-            <!-- CONFIRM NEW PASSWORD -->
+        <!-- CONFIRM NEW PASSWORD -->
+      
+        <div class="input-box">
+          <label for="confirm-newpw">Confirm New Password <span style="color: red;">*</span></label>
+            <input type="password" id="confirm-newpw" placeholder="Repeat New Password" required>
+        </div>
+
+        <!-- <span class="match-pass" id = "message" style="text-align: center;"></span> -->
+
+        <!-- ENTER NEW PASSWORD -->
+        <div class="new">
+          <div class="input-box">
+            <label for="password">Enter New Password<span style="color: red;">*</span></label>
+              <input type="password" onkeyup="trigger()" name="input-text" id="password" placeholder="Enter New Password" required>
+          </div>
           
-            <div class="input-box">
-              <label for="confirm-newpw">Confirm New Password <span style="color: red;">*</span></label>
-                <input type="password" id="confirm-newpw" placeholder="Repeat New Password" required>
-            </div>
+          <div class="indicator">
+            <span class = "weak">1</span>
+            <span class = "medium">2</span>
+            <span class = "strong">3</span>
+        </div>
 
-            <!-- <span class="match-pass" id = "message" style="text-align: center;"></span> -->
-
-            <!-- ENTER NEW PASSWORD -->
-            <div class="new">
-              <div class="input-box">
-                <label for="password">Enter New Password<span style="color: red;">*</span></label>
-                  <input type="password" onkeyup="trigger()" name="input-text" id="password" placeholder="Enter New Password" required>
-              </div>
-              
-              <div class="indicator">
-                <span class = "weak">1</span>
-                <span class = "medium">2</span>
-                <span class = "strong">3</span>
-            </div>
-
-             <div class="password-strength">
-                Password Strength: Weak
-            </div> 
-            </div>
+         <div class="password-strength">
+            Password Strength: Weak
+        </div> 
+        </div>
             
 
 
