@@ -29,12 +29,11 @@ header .leftArea img{
 	z-index: 1;
 	top: 0;
 	background: #262626;
-	margin-top: 59px;
-	padding-top: 30px;
+	padding-top: 100px;
 	position: fixed;
 	left: 0;
 	width: 250px;
-	height: calc(100% - 5%);
+	height: calc(110% - 1%);
 	transition: 0.4s;
 	transition-property: left;
 	overflow-y: auto;
