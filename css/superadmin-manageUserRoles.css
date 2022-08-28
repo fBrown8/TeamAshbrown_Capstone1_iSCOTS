@@ -68,7 +68,7 @@ nav{
 }
 
 .button{
-    margin-left: 56%;
+    margin-left: 57%;
     margin-bottom: 30px;
 }
 
@@ -81,7 +81,7 @@ nav{
     font-weight: 600;
 }
 
-.tickets-list{
+.userRoles-container{
     background-color: #fff;
     padding: 25px;
     margin: 0 150px 30px 150px;
@@ -89,23 +89,23 @@ nav{
     box-shadow: -5px 5px 20px #b5b5b5;
 }
 
-.app-list thead tr {
+.userRoles-list thead tr {
     border-bottom: 1px solid #dddddd;
     text-align: left;
     font-weight: bold;
 }
   
-.app-list th, .app-list td {
+.userRoles-list th, .userRoles-list td {
     padding: 12px;
     font-family: 'Montserrat';
     font-size: 13px;
 }
   
-.app-list tbody tr {
+.userRoles-list tbody tr {
     border-bottom: 1px solid #dddddd;
 }
 
-.app-list thead{
+.userRoles-list thead{
     color:#737373;
     font-size: 13px;
 }
@@ -118,12 +118,7 @@ nav{
     width: 80%;
 }
 
-#ticket-created,
 #assigned-users{
-    width: 20%;
-}
-
-#ticket-number{
     width: 20%;
 }
 
