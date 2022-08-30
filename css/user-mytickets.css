@@ -75,6 +75,10 @@ nav{
     box-shadow: -5px 5px 20px #b5b5b5;
 }
 
+/* TABLE */
+.app-list{
+    width: 100%;
+}
 .app-list thead tr {
     border-bottom: 1px solid #dddddd;
     text-align: left;
@@ -113,6 +117,10 @@ nav{
     width: 20%;
 }
 
+.search{
+    margin-top: 10px;
+}
+
 .search button{
     border: none;
     background-color: #fff;
@@ -122,6 +130,14 @@ nav{
 
 .search input{
     font-family: 'Montserrat';
+}
+
+#no-ticket{
+    text-align: center;
+}
+
+.nav-item button{
+    color: #B48834;
 }
 
 /*FOOTER*/

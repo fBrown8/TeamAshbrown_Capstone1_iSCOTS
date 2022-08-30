@@ -57,6 +57,191 @@
 </div>
 
 <div class="tickets-list">
+  <div class="tabs"> <!--Yung status ng ticket nakadepende kung saan siyang tab nakalagay-->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="alltickets-tab" data-bs-toggle="tab" data-bs-target="#all-tickets" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="processingtickets-tab" data-bs-toggle="tab" data-bs-target="#processing-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Processing</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="reopenedtickets-tab" data-bs-toggle="tab" data-bs-target="#reopened-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Reopened</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="resolvedtickets-tab" data-bs-toggle="tab" data-bs-target="#resolved-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Resolved</button>
+      </li>
+      <li class="nav-item" role="presentation">
+          <button class="nav-link" id="dismissedtickets-tab" data-bs-toggle="tab" data-bs-target="#dismissed-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Dismissed</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="ticketTabContent">
+      <div class="tab-pane fade show active" id="all-tickets" role="tabpanel" aria-labelledby="alltickets-tab">
+        <div class="search">
+          <form class="search-app" action="#">
+            <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+  
+      <br>
+  
+      <table class="app-list" id = "table">
+          <thead>
+            <tr>
+              <th id="ticket-number">TICKET NO.</th>
+              <th id="ticket-subject">SUBJECT</th>
+              <th id="ticket-created">CREATED AT</th>
+              <th id="ticket-status">STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+            <tr id="ticket">
+              <td id="ticketnum">XXX</td>
+              <td id="subject">Subject not available on my course site</td>
+              <td id="date-created">2022-05-14</td>
+              <td id="ticketstat">Processing</td>
+            </tr>
+  
+            <tr id="ticket">
+              <td id="ticketnum">XXX</td>
+              <td id="subject">Password Reset</td>
+              <td id="date-created">2022-05-14</td>
+              <td id="ticketstat">Dismissed</td>
+            </tr>
+  
+            
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-pane fade show" id="processing-tickets" role="tabpanel" aria-labelledby="processingtickets-tab">
+        <div class="search">
+          <form class="search-app" action="#">
+            <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+  
+      <br>
+  
+      <table class="app-list" id = "table">
+          <thead>
+            <tr>
+              <th id="ticket-number">TICKET NO.</th>
+              <th id="ticket-subject">SUBJECT</th>
+              <th id="ticket-created">CREATED AT</th>
+              <th id="ticket-status">STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+            <tr id="ticket">
+              <td id="ticketnum">XXX</td>
+              <td id="subject">Subject not available on my course site</td>
+              <td id="date-created">2022-05-14</td>
+              <td id="ticketstat">Processing</td>
+            </tr>
+              
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-pane fade show" id="reopened-tickets" role="tabpanel" aria-labelledby="reopenedtickets-tab">
+        <div class="search">
+          <form class="search-app" action="#">
+            <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+  
+      <br>
+  
+      <table class="app-list" id = "table">
+          <thead>
+            <tr>
+              <th id="ticket-number">TICKET NO.</th>
+              <th id="ticket-subject">SUBJECT</th>
+              <th id="ticket-created">CREATED AT</th>
+              <th id="ticket-status">STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+
+              <td id="no-ticket" colspan="4">No ticket available</td>
+
+              
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-pane fade show" id="resolved-tickets" role="tabpanel" aria-labelledby="resolvedtickets-tab">
+        <div class="search">
+          <form class="search-app" action="#">
+            <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+  
+      <br>
+  
+      <table class="app-list" id = "table">
+          <thead>
+            <tr>
+              <th id="ticket-number">TICKET NO.</th>
+              <th id="ticket-subject">SUBJECT</th>
+              <th id="ticket-created">CREATED AT</th>
+              <th id="ticket-status">STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+  
+
+              <td id="no-ticket" colspan="4">No ticket available</td>
+
+              
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-pane fade show" id="dismissed-tickets" role="tabpanel" aria-labelledby="dismissedtickets-tab">
+        <div class="search">
+          <form class="search-app" action="#">
+            <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+  
+      <br>
+  
+      <table class="app-list" id = "table">
+          <thead>
+            <tr>
+              <th id="ticket-number">TICKET NO.</th>
+              <th id="ticket-subject">SUBJECT</th>
+              <th id="ticket-created">CREATED AT</th>
+              <th id="ticket-status">STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr id="ticket">
+              <td id="ticketnum">XXX</td>
+              <td id="subject">Password Reset</td>
+              <td id="date-created">2022-05-14</td>
+              <td id="ticketstat">Dismissed</td>
+            </tr>
+  
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--
     <div class="search">
         <form class="search-app" action="#">
           <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
@@ -94,6 +279,7 @@
           
         </tbody>
       </table>
+    -->
 </div>
 <!--FOOTER-->
 <footer>

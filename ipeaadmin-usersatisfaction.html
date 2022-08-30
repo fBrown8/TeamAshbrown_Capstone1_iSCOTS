@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ipeaadmin-usersatisfaction.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/f7f6ac6a49.js" crossorigin="anonymous"></script>
+    <!--Chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>User Satisfaction | Admin</title>
+</head>
+<body>
+	<input type="checkbox" id="check" checked="false">
+	<!--header area start-->
+	<header>
+		<label for = "check">
+			<i class="fas fa-bars" id="menuBtn"></i>
+		</label>
+		<div class ="leftArea">
+			<img src="img/white.png" alt="iscots logo">
+		</div>
+	</header>
+	<div class="block">
+		<br>
+	</div>
+	<!--header area end-->
+	<!--sidebar start-->
+	<nav class = "sideBar">
+		<a href="#" class="dboard"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span></a>
+		<span class="label">SYSTEM</span>
+		<a href="#" class="ticket"><i class="fa-solid fa-ticket"></i><span>Tickets</span></a>
+        <a href="#" class="user-satisfaction"><i class="fa-solid fa-face-smile"></i><span>User Satisfaction</span></a>
+        <a href="personnel-settings.html" class="settings"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+		<a href="#" class = "logout"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+	</nav>
+	<script src="/js/sidenav.js"></script>
+	<!--sidebar end-->
+
+<!-- CONTENT AREA -->
+<div class="content">
+    <div class="notif-panel"> <!--Sa notification dapat may limit kung ilan yung dadating tas pag sumobra na sa number na yon,
+                                    madedelete automatic yung notif-->
+            <h5>Notifications</h5>
+
+            <div class="card" id="notification-message"> <!--Dito nakalagay yung notification message-->
+                <div class="card-body">
+                  <p class="card-text">You have been assigned to <span><b>[ticket number and subject]</b></span> by <span><b>[agent name]</b></span></p>
+                </div>
+                <div class="card-footer bg-transparent text-muted">2022-05-13 12:30:41</div> <!--dapat real time and date-->
+            </div>
+
+            <div class="card" id="notification-message"> <!--Dito nakalagay yung notification message-->
+                <div class="card-body">
+                  <p class="card-text">You have assigned <span><b>[ticket number and subject]</b></span> to <span><b>[agent name]</b></span></p>
+                </div>
+                <div class="card-footer bg-transparent text-muted">2022-05-13 12:30:41</div> <!--dapat real time and date-->
+            </div>
+
+            <div class="card" id="notification-message"> <!--Dito nakalagay yung notification message-->
+                <div class="card-body">
+                  <p class="card-text">You have resolved <span><b>[ticket number and subject]</b></span></p>
+                </div>
+                <div class="card-footer bg-transparent text-muted">2022-05-13 12:30:41</div> <!--dapat real time and date-->
+            </div>
+
+            <div class="card" id="notification-message"> <!--Dito nakalagay yung notification message-->
+                <div class="card-body">
+                  <p class="card-text"><span><b>[agent name]</b></span> have resolved <span><b>[ticket number and subject]</b></span></p>
+                </div>
+                <div class="card-footer bg-transparent text-muted">2022-05-13 12:30:41</div> <!--dapat real time and date-->
+            </div>
+        </div>
+    
+    <div class = "satisfaction">
+        <h1>User Satisfaction</h1>
+            <div class="satisfaction-score">
+                <div class="percent">
+                    <span>User Satisfaction Score</span>
+                    <h1 id="us-score">##%</h1>
+                </div>
+
+                <div class="user-stats">
+                    <div class="graphs" id="satisfaction-graph">
+                        <canvas id="userSatis"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <table class="app-list" id = "table"> <!--Table for user satisfaction comments-->
+                <thead>
+                  <tr>
+                    <th id="name">NAME</th>
+                    <th id="rating">RATING</th>
+                    <th id="comment">COMMENT</th>
+                    <th id="actions">ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+        
+                  <tr id="entry">
+                    <td id="user-name">Juan Dela Cruz</td>
+                    <td id="user-rating">Very Satisfactory</td>
+                    <td id="user-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td id="action-button">
+                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr id="entry">
+                    <td id="user-name">Juan Dela Cruz</td>
+                    <td id="user-rating">Satisfactory</td>
+                    <td id="user-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td id="action-button">
+                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr id="entry">
+                    <td id="user-name">Juan Dela Cruz</td>
+                    <td id="user-rating">Neutral</td>
+                    <td id="user-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td id="action-button">
+                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr id="entry">
+                    <td id="user-name">Juan Dela Cruz</td>
+                    <td id="user-rating">Unsatisfactory</td>
+                    <td id="user-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td id="action-button">
+                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+
+                  <tr id="entry">
+                    <td id="user-name">Juan Dela Cruz</td>
+                    <td id="user-rating">Very Unsatisfactory</td>
+                    <td id="user-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td id="action-button">
+                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+            </table>
+    </div>
+
+
+
+</div>
+<!--CONTENT AREA END-->
+<script src="js/satis-chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
