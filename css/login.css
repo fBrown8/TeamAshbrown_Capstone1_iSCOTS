@@ -65,7 +65,7 @@ label{
     font-family: 'Montserrat';
     font-size: 13px;
     float: right;
-    margin-right: 32px;
+    margin-right: 40px;
 }
 
 br{
@@ -77,7 +77,7 @@ br{
     color: #fff;
     font-family: 'Montserrat';
     font-weight: 500;
-    padding: 10px 131px 10px 131px;
+    padding: 10px 164px 10px 164px;
     margin: 0 0 10px 26px;
     cursor: pointer;
 }
@@ -91,4 +91,173 @@ br{
 
 .no-acc{
     margin-bottom: 25px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1280px) {
+    .content img{
+        width: 45%;
+        margin: 30px 5% 15px 25%;
+    }
+
+    .login{
+        width: 35%;
+        margin: 0 10% 0 31%;
+    }
+
+    label{
+        margin-left: 8.5%;
+    }
+    
+    input{
+        margin: 0px 5% 0px 8.5%;
+    }
+
+    #login{
+        padding: 10px 39% 10px 39%;
+        margin: 0 7% 10px 8.3%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 8%;
+    }
+
+    #email{
+        margin-top: 4px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .content img{
+        width: 45%;
+        margin: 30px 5% 15px 25%;
+    }
+
+    .login{
+        width: 35%;
+        margin: 0 10% 0 31%;
+    }
+
+    label{
+        margin-left: 8.5%;
+    }
+    
+    input{
+        margin: 0px 5% 0px 8.5%;
+    }
+
+    #login{
+        padding: 10px 39% 10px 39%;
+        margin: 0 7% 10px 8.3%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 8%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .content img{
+        width: 61%;
+        margin: 30px 5% 15px 18%;
+    }
+
+    .login{
+        width: 50%;
+        margin: 0 24% 0 24%;
+    }
+
+    label{
+        margin-left: 8.5%;
+    }
+    
+    input{
+        margin: 0px 5% 0px 8.5%;
+    }
+
+    #login{
+        padding: 10px 40% 10px 36%;
+        margin: 0 7% 10px 8.3%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 8%;
+    }
+
+    #email{
+        margin-top: 4px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .content img{
+        width: 70%;
+        margin: 30px 5% 15px 13%;
+    }
+
+    .login{
+        width: 60%;
+        margin: 0 15% 0 19%;
+    }
+
+    label{
+        margin-left: 7%;
+    }
+    
+    input{
+        margin: 0px 5% 0px 7%;
+    }
+
+    #login{
+        padding: 10px 38% 10px 38%;
+        margin: 0 7% 10px 7%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 8%;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .content img{
+        width: 85%;
+        margin: 30px 20px 15px 18px;
+    }
+
+    .login{
+        width: 75%;
+        margin: 0 10% 0 10%;
+    }
+
+    label{
+        margin-left: 5%;
+    }
+    
+    input{
+        margin: 0px 5% 0px 6%;
+    }
+
+    #login{
+        padding: 10px 37% 10px 38%;
+        margin: 0 6% 10px 6%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 7%;
+    }
 }
