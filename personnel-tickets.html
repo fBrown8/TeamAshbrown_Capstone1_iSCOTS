@@ -77,9 +77,6 @@
             <button class="nav-link active" id="alltickets-tab" data-bs-toggle="tab" data-bs-target="#all-tickets" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="opentickets-tab" data-bs-toggle="tab" data-bs-target="#open-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Open</button>
-        </li>
-        <li class="nav-item" role="presentation">
             <button class="nav-link" id="reopenedtickets-tab" data-bs-toggle="tab" data-bs-target="#reopened-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Reopened</button>
         </li>
         <li class="nav-item" role="presentation">
@@ -112,7 +109,6 @@
                     <th id="ticket-created">DATE CREATED</th>
                     <th id="ticket-priority">PRIORITY LEVEL</th>
                     <th id="ticket-status">STATUS</th>
-                    <th id="action">ACTIONS</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -127,24 +123,6 @@
                     <td id="ticketstat">
                         <button class="status" id="pending" style="background-color: orange;">Processing</button>
                     </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
-                  </tr>
-    
-                  <tr id="ticket">
-                    <td id="ticketnum">XXX</td>
-                    <td id="subject">Subject not available on my course site</td>
-                    <td id="requester">Juan Dela Cruz</td>
-                    <td id="agent">Francis Abello</td>
-                    <td id="date-created">2022-05-14</td>
-                    <td id="priority-level">Medium</td>
-                    <td id="ticketstat">
-                        <button class="status" id="open" style="background-color: #0FA958;">Open</button>
-                    </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
                   </tr>
     
                   <tr id="ticket">
@@ -156,9 +134,6 @@
                     <td id="priority-level">Low</td>
                     <td id="ticketstat">
                         <button class="status" id="open" style="background-color: #EA4335;">Dismissed</button>
-                    </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
                   </tr>
     
@@ -172,9 +147,6 @@
                     <td id="ticketstat">
                         <button class="status" id="open" style="background-color: #565656;">Resolved</button>
                     </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
                   </tr>
     
                   <tr id="ticket">
@@ -187,54 +159,11 @@
                     <td id="ticketstat">
                         <button class="status" id="open" style="background-color: #7B61FF;">Reopened</button>
                     </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
                   </tr>
                   
                 </tbody>
             </table>
             
-        </div>
-
-        <div class="tab-pane fade" id="open-tickets" role="tabpanel" aria-labelledby="opentickets-tab">
-            <div class="search">
-                <form class="search-app" action="#">
-                    <input onkeyup="filter()" id="search" type="text" placeholder="Search..." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-
-            <table class="app-list" id = "table"> <!--Table for OPEN tickets-->
-                <thead>
-                  <tr>
-                    <th id="ticket-number">TICKET NO.</th>
-                    <th id="ticket-subject">SUBJECT</th>
-                    <th id="ticket-requester">REQUESTER</th>
-                    <th id="ticket-agent">AGENT</th>
-                    <th id="ticket-created">DATE CREATED</th>
-                    <th id="ticket-priority">PRIORITY LEVEL</th>
-                    <th id="ticket-status">STATUS</th>
-                    <th id="action">ACTIONS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr id="ticket">
-                    <td id="ticketnum">XXX</td>
-                    <td id="subject">Subject not available on my course site</td>
-                    <td id="requester">Juan Dela Cruz</td>
-                    <td id="agent">Francis Abello</td>
-                    <td id="date-created">2022-05-14</td>
-                    <td id="priority-level">Medium</td>
-                    <td id="ticketstat">
-                        <button class="status" id="open" style="background-color: #0FA958;">Open</button>
-                    </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-            </table>
         </div>
 
         <div class="tab-pane fade" id="reopened-tickets" role="tabpanel" aria-labelledby="reopenedtickets-tab">

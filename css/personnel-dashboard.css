@@ -174,11 +174,6 @@ label #menuBtn:hover{
 	display: none;
 }
 
-.active {
-	background-color: #B48834;
-	color: white;
-}
-
 .block{
     background-color: #B48834;
     height: 13px;
@@ -287,4 +282,10 @@ label #menuBtn:hover{
 
 #average-resol-time{
     text-align: center;
+}
+
+.nav-item button{
+    color: #B48834;
+	font-family: 'Montserrat';
+	font-weight: 500;
 }

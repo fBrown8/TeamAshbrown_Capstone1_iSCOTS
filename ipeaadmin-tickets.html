@@ -85,7 +85,7 @@
             <button class="nav-link active" id="alltickets-tab" data-bs-toggle="tab" data-bs-target="#all-tickets" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="opentickets-tab" data-bs-toggle="tab" data-bs-target="#open-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Open</button>
+            <button class="nav-link" id="opentickets-tab" data-bs-toggle="tab" data-bs-target="#open-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Unassigned</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="reopenedtickets-tab" data-bs-toggle="tab" data-bs-target="#reopened-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Reopened</button>
@@ -99,7 +99,7 @@
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="dismissedtickets-tab" data-bs-toggle="tab" data-bs-target="#dismissed-tickets" type="button" role="tab" aria-controls="profile" aria-selected="false">Dismissed</button>
         </li>
-  </ul>
+    </ul>
 
   <div class="tab-content" id="ticketTabContent">
         <div class="tab-pane fade show active" id="all-tickets" role="tabpanel" aria-labelledby="alltickets-tab">
@@ -120,7 +120,6 @@
                     <th id="ticket-created">DATE CREATED</th>
                     <th id="ticket-priority">PRIORITY LEVEL</th>
                     <th id="ticket-status">STATUS</th>
-                    <th id="action">ACTIONS</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -134,9 +133,7 @@
                     <td id="priority-level">High</td>
                     <td id="ticketstat">
                         <button class="status" id="pending" style="background-color: orange;">Processing</button>
-                    </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                        <!--Pag na click yung button na 'to, mapupunta siya don sa view ticket ng admin-->
                     </td>
                   </tr>
     
@@ -148,10 +145,7 @@
                     <td id="date-created">2022-05-14</td>
                     <td id="priority-level">Medium</td>
                     <td id="ticketstat">
-                        <button class="status" id="open" style="background-color: #0FA958;">Open</button>
-                    </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="status" id="open" style="background-color: #0FA958;">Unassigned</button>
                     </td>
                   </tr>
     
@@ -165,9 +159,6 @@
                     <td id="ticketstat">
                         <button class="status" id="open" style="background-color: #EA4335;">Dismissed</button>
                     </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
                   </tr>
     
                   <tr id="ticket">
@@ -180,9 +171,6 @@
                     <td id="ticketstat">
                         <button class="status" id="open" style="background-color: #565656;">Resolved</button>
                     </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
-                    </td>
                   </tr>
     
                   <tr id="ticket">
@@ -194,9 +182,6 @@
                     <td id="priority-level">Low</td>
                     <td id="ticketstat">
                         <button class="status" id="open" style="background-color: #7B61FF;">Reopened</button>
-                    </td>
-                    <td id="action-button">
-                        <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
                   </tr>
                   
@@ -235,7 +220,7 @@
                     <td id="date-created">2022-05-14</td>
                     <td id="priority-level">Medium</td>
                     <td id="ticketstat">
-                        <button class="status" id="open" style="background-color: #0FA958;">Open</button>
+                        <button class="status" id="open" style="background-color: #0FA958;">Unassigned</button>
                     </td>
                     <td id="action-button">
                         <button class="delete-ticket" id="delete-ticket"><i class="fa-solid fa-trash-can"></i></button>

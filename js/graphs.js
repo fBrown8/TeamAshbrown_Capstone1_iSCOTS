@@ -1,8 +1,9 @@
 let tixChart = document.getElementById('ticketChart').getContext('2d');
 let tixCateg = document.getElementById('categChart').getContext('2d');
 let userSatis = document.getElementById('usChart').getContext('2d');
+let serviceChart = document.getElementById("perserviceChart").getContext("2d");
 
-//ticket statistics for 7 days chart
+//ticket statistics per week chart
 let mixedChart = new Chart(tixChart, {
     type: 'bar',
     data: {
@@ -21,9 +22,59 @@ let mixedChart = new Chart(tixChart, {
         labels: ['August 20', 'August 21', 'August 22', 'August 23', 'August 24', 'August 25', 'August 26']
     },
     options:{
-        responsive: true
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Total Number of Tickets Per Week'
+            }
+        }
     }
  });
+
+//ticket statistics per service
+let dataPerService = {
+    labels: ["August 20", "August 21", "August 22", "August 23", "August 24", "August 25", "August 26"],
+    datasets: [{
+      label: "Student Inquiries",
+      backgroundColor: "#ffd492",
+      data: [13, 7, 4, 9, 11, 6, 15]
+    }, {
+      label: "Student Grievances",
+      backgroundColor: "#e4aa5c",
+      data: [14, 3, 5, 8, 10, 9, 5]
+    }, {
+      label: "Enrollment Concerns",
+      backgroundColor: "#B48834",
+      data: [17, 2, 6, 7, 19, 9, 4]
+    },{
+    label: "Others",
+      backgroundColor: "#340a10",
+      data: [7, 2, 6, 9, 7, 24, 10]
+    }]
+  };
+
+let groupedChart = new Chart(serviceChart, {
+    type: 'bar',
+    data: dataPerService,
+    options: {
+      barValueSpacing: 20,
+      scales: {
+        yAxes: [{
+          ticks: {
+            min: 0,
+          }
+        }]
+      },
+      plugins: {
+        title: {
+            display: true,
+            text: 'Total Number of Tickets Per Service in a Week'
+        }
+    }
+    }
+  });
+  
 
 //tickets by category chart
 const doughnutChart = new Chart(categChart, {

@@ -91,7 +91,7 @@
                         <div class="ticket-count" style="border-color: #0FA958;">
                             <span id="num-of-tix" style="color: #0FA958;">3</span>
                             <br>
-                            <span id="ticket-category">Open</span>
+                            <span id="ticket-category">Unassigned</span>
                         </div>
 
                         <div class="ticket-count" style="border-color: #FF9500;">
@@ -109,7 +109,7 @@
                         <div class="ticket-count" style="border-color: #565656;">
                             <span id="num-of-tix" style="color: #565656;">1</span>
                             <br>
-                            <span id="ticket-category">Closed</span>
+                            <span id="ticket-category">Resolved</span>
                         </div>
 
                         <div class="ticket-count" style="border-color: #EA4335;">
@@ -123,9 +123,28 @@
             </div>
 
             <div class="ticket-stats">
-                <span>TICKET STATISTICS (7 DAYS)</span>
-                <div class="graphs" id="tix-stat">
-                    <canvas id="ticketChart"></canvas>
+                <span>TICKET STATISTICS</span>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="perweek-tab" data-bs-toggle="tab" data-bs-target="#per-week" type="button" role="tab" aria-controls="home" aria-selected="true">Per Week</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="perservice-tab" data-bs-toggle="tab" data-bs-target="#per-service" type="button" role="tab" aria-controls="profile" aria-selected="false">Per Service</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="ticketTabContent">
+                    <div class="tab-pane fade show active" id="per-week" role="tabpanel" aria-labelledby="perweek-tab">
+                        <div class="graphs" id="tix-stat">
+                            <canvas id="ticketChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="per-service" role="tabpanel" aria-labelledby="perservice-tab">
+                        <div class="graphs" id="tix-stat">
+                            <canvas id="perserviceChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 
