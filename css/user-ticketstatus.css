@@ -56,6 +56,10 @@ nav{
     box-shadow: -5px 5px 20px #b5b5b5;
 }
 
+.app-list{
+    width: 100%;
+}
+
 .app-list thead tr {
     border-bottom: 1px solid #dddddd;
     text-align: left;
