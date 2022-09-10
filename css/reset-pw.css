@@ -178,3 +178,161 @@ br{
     align-items: center;
     border: none;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    
+    .content img{
+        width: 90%;
+    }
+
+    .reset-pw{
+        width: 70%;
+        margin: auto;
+    }
+
+    .reset-pw header{
+        font-size: 100%;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    input{
+        font-size: 10px;
+        width: 75.5%;
+    }
+
+    input, 
+    label{
+        margin: 0 7%;
+    }
+
+    .password-strength{
+        font-size: 10px;
+    }
+
+    #reset-btn{
+        padding: 5%;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .content img{
+        width: 70%;
+    }
+
+    .reset-pw{
+        width: 80%;
+        margin: auto;
+    }
+
+    .reset-pw header{
+        font-size: 145%;
+    }
+
+    label{
+        font-size: 13px;
+    }
+
+    input{
+        font-size: 13px;
+        width: 80.5%;
+    }
+
+    input, 
+    label{
+        margin: 0 7%;
+    }
+
+    .password-strength{
+        font-size: 13px;
+    }
+
+    #reset-btn{
+        padding: 3% 30%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .content img{
+        width: 70%;
+    }
+
+    .reset-pw{
+        width: 60%;
+        margin: auto;
+    }
+
+    .reset-pw header{
+        font-size: 150%;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    input{
+        font-size: 15px;
+        width: 80.5%;
+    }
+
+    input, 
+    label{
+        margin: 0 7%;
+    }
+
+    .password-strength{
+        font-size: 14px;
+    }
+
+    #reset-btn{
+        padding: 2% 30%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px) {
+    .content img{
+        width: 50%;
+    }
+
+    .reset-pw{
+        width: 50%;
+        margin: auto;
+    }
+
+    .reset-pw header{
+        font-size: 150%;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    input{
+        font-size: 15px;
+        width: 80.5%;
+    }
+
+    input, 
+    label{
+        margin: 0 7%;
+    }
+
+    .password-strength{
+        font-size: 14px;
+    }
+
+    #reset-btn{
+        padding: 2% 30%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

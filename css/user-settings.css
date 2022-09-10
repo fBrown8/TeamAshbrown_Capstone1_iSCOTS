@@ -59,7 +59,7 @@ footer{
 
 
 .container-content{
-    max-width: 1300px;
+    /* max-width: 1300px; */
     width: 100%;
     padding-left: 130px;
 }
@@ -89,7 +89,7 @@ footer{
 }
 
 .container-content form{
-    max-width: 900px;
+    max-width: 100%;
     width: 100%;
     padding: 25px 30px;
 }
@@ -100,6 +100,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 30px;
+    width: 80%;
 }
 
 
@@ -174,3 +175,503 @@ form .user-details .input-box,
     position: relative;
     font-size: 1px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:320px) and (max-width: 480px){
+
+    .container-fluid img{
+        width: 81%;
+    }
+
+    .container-content {
+        width: 100%;
+        padding-left: 5%;
+        /* max-width: 100%; */
+    }
+
+    .container-content .title{
+        font-size: 140%;
+        margin-top: 5%;
+    }
+
+    .container-content hr{
+        width: 100%;
+    }
+
+    .container-content h3{
+        font-size: 75%;
+    }
+
+    .container-content form{
+        padding: 0% 5%;
+        overflow-y: scroll;
+        /* max-width: 100%; */
+    }
+
+    .container-content form .user-details,
+    .change-password{
+        padding-left: 3%;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 61%;
+        line-height: 0%;
+    }
+
+    .user-details .input-box input, 
+    .change-password .input-box input{
+        height: 30px;
+        width: 200%;
+        font-size: 75%;
+        margin-bottom: 1%;
+    }
+    
+    .new .indicator{
+        margin: 0 20%;
+        width: 160%;
+    }
+
+    .password-strength{
+        font-size: 10px;
+    }
+
+    .password-strength.weak {
+        width: 200%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 60%;
+        padding: 3% 10%;
+        margin-top: 5%;
+        float: none;
+    }
+
+    /* FOOTER */
+    body{ 
+        height:100vh; 
+        margin:0; 
+        overflow: scroll;
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:50px; 
+    }
+
+        /* Trick */
+        body{ 
+            display:flex; 
+            flex-direction:column; 
+        }
+
+        footer{
+            margin-top:auto; 
+        }
+
+    .footer-content img{
+        width: 7rem;
+        margin-left: 1%;
+    }
+
+    .footer-content .credits{
+        font-size: 0.4rem;
+        margin: 2%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .container-fluid img{
+        width: 70%;
+    }
+
+    .container-content {
+        width: 100%;
+        padding-left: 5%;
+        /* max-width: 100%; */
+    }
+
+    .container-content .title{
+        font-size: 160%;
+        margin-top: 5%;
+    }
+
+    body .container-content hr{
+        width: 95%;
+    }
+
+    .container-content h3{
+        font-size: 80%;
+    }
+
+    .container-content form{
+        padding: 0% 5%;
+        overflow-y: scroll;
+        /* max-width: 100%; */
+    }
+
+    .container-content form .user-details,
+    .change-password{
+        padding-left: 3%;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 80%;
+        line-height: 0%;
+    }
+
+    .user-details .input-box input, 
+    .change-password .input-box input{
+        height: 35px;
+        width: 200%;
+        font-size: 80%;
+        margin-bottom: 1%;
+    }
+    
+    .new .indicator{
+        margin: 0 20%;
+        width: 160%;
+    }
+
+    .password-strength{
+        font-size: 10px;
+    }
+
+    .password-strength.weak {
+        width: 200%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 70%;
+        padding: 2% 10%;
+        margin-top: 5%;
+        float: none;
+    }
+
+    /* FOOTER */
+    body{ 
+        height:100vh; 
+        margin:0; 
+        overflow: scroll;
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:50px; 
+    }
+
+        /* Trick */
+        body{ 
+            display:flex; 
+            flex-direction:column; 
+        }
+
+        footer{
+            margin-top:auto; 
+        }
+
+    .footer-content img{
+        width: 9rem;
+        margin-left: 1%;
+    }
+
+    .footer-content .credits{
+        font-size: 0.5rem;
+        margin: 2%;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-fluid img{
+        width: 50%;
+    }
+
+    .container-content {
+        width: 100%;
+        padding-left: 5%;
+        /* max-width: 100%; */
+    }
+
+    .container-content .title{
+        font-size: 185%;
+        margin-top: 4%;
+    }
+
+    body .container-content hr{
+        width: 95%;
+    }
+
+    .container-content h3{
+        font-size: 90%;
+    }
+
+    .container-content form{
+        padding: 0% 5%;
+        overflow-y: scroll;
+        /* max-width: 100%; */
+    }
+
+    .container-content form .user-details,
+    .change-password{
+        padding-left: 3%;
+        /* flex-direction: row; */
+        width: 100%;
+    }
+    
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 85%;
+        line-height: 0%;
+    }
+
+    .user-details .input-box input, 
+    .change-password .input-box input{
+        height: 35px;
+        width: 90%;
+        font-size: 85%;
+        margin-bottom: 1%;
+    }
+    
+    .new .indicator{
+        margin: 0 0%;
+        width: 90%;
+    }
+
+    .password-strength{
+        font-size: 10px;
+    }
+
+    .password-strength.weak {
+        width: 100%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 85%;
+        padding: 1% 4%;
+        margin: 5% 4% 5% 0;
+        float: right;
+    }
+
+    /* FOOTER */
+    body{ 
+        height:100vh; 
+        margin:0; 
+        overflow: scroll;
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:50px; 
+    }
+
+        /* Trick */
+        body{ 
+            display:flex; 
+            flex-direction:column; 
+        }
+
+        footer{
+            margin-top:auto; 
+        }
+
+    .footer-content img{
+        width: 11rem;
+        margin-left: 1%;
+    }
+
+    .footer-content .credits{
+        font-size: 0.6rem;
+        margin: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px){
+
+    .container-fluid img{
+        width: 40%;
+    }
+
+    .container-content {
+        width: 100%;
+        padding-left: 5%;
+        max-width: 100%;
+    }
+
+    .container-content .title{
+        font-size: 185%;
+        margin-top: 4%;
+    }
+
+    body .container-content hr{
+        width: 95%;
+    }
+
+    .container-content h3{
+        font-size: 90%;
+    }
+
+    .container-content form{
+        padding: 0% 5%;
+        overflow-y: scroll;
+        width: 90%;
+    }
+
+    .container-content form .user-details,
+    .change-password{
+        padding-left: 3%;
+        /* flex-direction: row; */
+        width: 90%;
+    }
+    
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 85%;
+        line-height: 0%;
+    }
+
+    .user-details .input-box input, 
+    .change-password .input-box input{
+        height: 35px;
+        width: 90%;
+        font-size: 85%;
+        margin-bottom: 1%;
+    }
+    
+    .new .indicator{
+        margin: 0 0%;
+        width: 90%;
+    }
+
+    .password-strength{
+        font-size: 10px;
+    }
+
+    .password-strength.weak {
+        width: 100%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 85%;
+        /* padding: 1% 4%;
+        margin: 5% 4% 5% 0; */
+        float: right;
+        margin: 5% 14% 5% 0% ;
+    }
+
+    /* FOOTER */
+    body{ 
+        height:100vh; 
+        margin:0; 
+        overflow: scroll;
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:50px; 
+    }
+
+        /* Trick */
+        body{ 
+            display:flex; 
+            flex-direction:column; 
+        }
+
+        footer{
+            margin-top:auto; 
+        }
+
+    .footer-content img{
+        width: 11rem;
+        margin-left: 1%;
+    }
+
+    .footer-content .credits{
+        font-size: 0.6rem;
+        margin: 2%;
+    }
+
+}
+
+@media screen and (min-width:1291px){ 
+
+    .container-content{
+        padding-left: 5%;
+    }
+
+    .container-content hr{
+        width: 95%;
+    }
+
+    .container-content form{
+        width: 80%;
+    }
+
+    .reset-pwbtn button{
+        font-size: 85%;
+        /* padding: 1% 4%;
+        margin: 5% 4% 5% 0; */
+        float: right;
+        margin: 5% 20% 5% 0% ;
+    }
+    
+    /* FOOTER */
+
+    body{ 
+        height:100vh; 
+        margin:0; 
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:60px; 
+    }
+
+        /* Trick */
+        body{ 
+            display:flex; 
+            flex-direction:column; 
+        }
+
+        footer{
+            margin-top:auto; 
+        }
+
+    .footer-content img{
+        width: 11rem;
+        margin-left: 1%;
+    }
+
+    .footer-content .credits{
+        font-size: 0.6rem;
+        margin: 2%;
+    }
+
+}
+

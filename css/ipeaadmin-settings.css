@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.nav-link, .dropdown-item{
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.container-fluid img{
+    width: 30rem;
+}
+
+nav{
+    background-color: #262626;
+}
+
+.nav-item i{
+    color: #FDBF15;
+}
+
+.nav-link{
+    margin: 0 13px;
+}
+
+.block{
+    background-color: #B48834;
+    height: 13px;
+}
+
+/* Footer */
+footer{
+    background-color: #262626;
+    padding: 15px;
+}
+
+.footer-content img{
+    width: 15rem;
+    margin-left: 10px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.credits{
+    font-family: 'Montserrat';
+    color: #fff;
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    margin-right: 20px;
+}
+
+/* body */
+
+
+.container-content{
+    max-width: 100%;
+    width: 100%;
+    padding-left: 130px;
+}
+
+.container-content hr{
+    height: 1px;
+    color: #000000;
+    background-color: #000000;
+    border: none;
+    width: 100%;
+}
+
+.container-content .title{
+    font-family: 'Source Sans Pro';
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 26px;
+}
+
+.container-content h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.container-content form{
+    max-width: 80%;
+    width: 100%;
+    padding: 25px 30px;
+}
+
+.container-content form .user-details, 
+.change-password{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+
+form .user-details .input-box, 
+.change-password .input-box,
+.new{
+    width: calc(100% / 2 - 30px);    
+}
+
+.user-details .input-box input, 
+.change-password .input-box input{
+    height: 40px;
+    width: 100%;
+    font-family: 'Montserrat';
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #EAEAEA;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    
+}
+
+.change-password .new .input-box{
+    width: 100%;
+}
+
+.user-details .input-box .details,
+.change-password .input-box .details,
+.input-box label{
+    font-weight: 500;
+    /* margin-bottom: 5px; */
+    font-family: 'Montserrat';
+    font-size: 15px;
+    line-height: 33px;
+
+}
+
+
+/* Button */
+
+.reset-pwbtn{
+    margin-bottom: 30px;
+}
+.reset-pwbtn button{
+    background: #262626;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 28px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    float: right;
+    
+
+}
+
+
+/* Indicator */
+
+.indicator{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 25px;
+    display: none;
+}
+
+.indicator span{
+    width: 100%;
+    height: 50%;
+    background: lightgrey;
+    border-radius: 5px;
+    position: relative;
+    font-size: 1px;
+}
+
+/* MEDIA QUERIES  */
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    
+    header .leftArea img {
+        width: 80%;
+        margin-top: -15px;
+    }
+
+    .container-content{
+        padding-left: 20%;
+    }
+
+    .container-content hr{
+        width: 95%;
+        /* margin: 0%; */
+    }
+
+    .container-content form{
+        padding: 1% 4%;
+    }
+
+    .container-content .title {
+        font-size: 145%;
+        margin-top: 5%;
+    }
+
+    .container-content h3{
+        font-size: 85%;
+    }
+
+    form .user-details .input-box, 
+    .change-password .input-box, 
+    .new{
+        width: 100%;
+    }
+
+    .container-content form .user-details, 
+    .change-password{
+        flex-direction: column;
+        padding-left: 3%;
+    }
+
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 80%;
+    }
+
+    .reset-pwbtn button{
+        padding: 2% 5%;
+        font-size: 75%;
+        margin-top: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px){
+    
+    header .leftArea img {
+        width: 70%;
+        margin-top: -15px;
+    }
+
+    .container-content{
+        padding-left: 15%;
+    }
+
+    .container-content hr{
+        width: 95%;
+        /* margin: 0%; */
+    }
+
+    .container-content form{
+        padding: 1% 4%;
+    }
+
+    .container-content .title {
+        font-size: 180%;
+        margin-top: 5%;
+    }
+
+    .container-content h3{
+        font-size: 100%;
+    }
+
+    form .user-details .input-box, 
+    .change-password .input-box, 
+    .new{
+        width: 100%;
+    }
+
+    .container-content form .user-details, 
+    .change-password{
+        flex-direction: column;
+        padding-left: 3%;
+    }
+
+    .user-details .input-box .details, 
+    .change-password .input-box .details, 
+    .input-box label{
+        font-size: 95%;
+    }
+
+    .reset-pwbtn button{
+        padding: 2% 5%;
+        font-size: 90%;
+        margin-top: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 901px) and (max-width: 1400px){
+
+    header .leftArea img{
+        width: 35%;
+    }
+
+    .container-content .title{
+        font-size: 200%;
+    }
+
+    .container-content hr{
+        width: 95%;
+    }
+
+}
+
+@media screen and (min-width: 1401px){
+    .container-content hr{
+        width: 95%
+    }
+}
+    
+    
