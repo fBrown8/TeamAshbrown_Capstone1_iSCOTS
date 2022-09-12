@@ -513,7 +513,7 @@ br{
     }
 
     .search-box{
-        height: 11%;
+        height: 10%;
         width: 70%;
         margin: auto;
         border-radius: 7px;
@@ -589,7 +589,110 @@ br{
     }
 
     body .container-fluid img{
-        width: 45%;
+        width: 30%;
+    }
+
+    .header-container{
+        height: 50%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('/img/qpav.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .header-container h1{
+        font-size: 300%;
+        padding-top: 5%;
+        height: 21%;
+        margin-top: 5%;
+    }
+
+    .header-container p{
+        font-size: 150%;
+        padding-top: 2%;
+        padding-bottom: 15%;
+        width: auto;
+        height: 10%;
+    }
+
+    .search-box{
+        height: 12%;
+        width: 65%;
+        margin: auto;
+        border-radius: 7px;
+        margin-top: -14%;
+    }
+    .accordion{
+        width: 80%;
+        margin: auto;
+        /* overflow: scroll; */
+    }
+
+    footer{
+        width: 100%;
+    }
+
+
+    strong {
+        font-size: 75%;
+    }
+
+    .accordion-content.active{
+        font-size: 70%;
+    }
+
+    body{ 
+        height:100vh; 
+        margin:0; 
+        /* overflow: scroll; */
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:50px; 
+    }
+
+    /* Trick */
+    body{ 
+        display:flex; 
+        flex-direction:column; 
+    }
+
+    footer{
+        margin-top:auto; 
+    }
+
+    .search-box input{
+        font-size: 20px;
+        padding: 0 10%;
+        background-size: 4%;
+        background-position: 4%;
+     
+    }
+
+    footer .footer-content img {
+        width: 12rem;
+        margin-left: 1%;
+    }
+
+    footer .credits{
+        font-size: 0.5rem;
+        margin: 1%;
+    }
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px){
+
+    .navbar{
+        width: 100%;
+    }
+
+    body .container-fluid img{
+        width: 35%;
     }
 
     .header-container{
@@ -680,7 +783,112 @@ br{
     }
 
     footer .credits{
-        font-size: 0.7rem;
-        margin: 2%;
+        font-size: 0.5rem;
+        margin: 1%;
+    }
+
+}
+
+@media screen and (min-width: 1441px) and (max-width:1920px){
+    .navbar{
+        width: 100%;
+    }
+
+    body .container-fluid img{
+        width: 30%;
+    }
+
+    .header-container{
+        height: 50%;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('/img/qpav.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .header-container h1{
+        font-size: 300%;
+        padding-top: 5%;
+        height: 21%;
+        margin-top: 5%;
+    }
+
+    .header-container p{
+        font-size: 150%;
+        padding-top: 2%;
+        padding-bottom: 15%;
+        width: auto;
+        height: 10%;
+    }
+
+    .search-box{
+        height: 12%;
+        width: 60%;
+        margin: auto;
+        border-radius: 7px;
+        margin-top: -14%;
+    }
+    .accordion{
+        width: 80%;
+        margin: auto;
+        /* overflow: scroll; */
+        height: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+
+    strong {
+        font-size: 100%;
+    }
+
+    .accordion-content.active{
+        font-size: 100%;
+    }
+
+    body{ 
+        height:100vh; 
+        margin:0; 
+        /* overflow: scroll; */
+    }
+
+    header{ 
+        min-height:50px; 
+    }
+
+    footer{ 
+        min-height:50px; 
+    }
+
+    /* Trick */
+    body{ 
+        display:flex; 
+        flex-direction:column; 
+    }
+
+    body footer{
+        margin-top:auto; 
+        padding: 1% 1%;
+    }
+
+    .search-box input{
+        font-size: 20px;
+        padding: 0 6%;
+        background-size: 3%;
+        background-position: 2%;
+     
+    }
+
+    footer .footer-content img {
+        width: 11rem;
+        margin-left: 1%;
+    }
+
+    footer .credits{
+        font-size: 0.5rem;
+        margin: 1%;
     }
 }
