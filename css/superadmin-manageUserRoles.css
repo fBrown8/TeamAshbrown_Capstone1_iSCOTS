@@ -170,3 +170,249 @@ footer{
     right: 0px;
     margin-right: 20px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 50%;
+    }
+
+    .button{
+        float: right;
+        margin-right: 6%;
+        margin-top: 3%;
+    }
+
+    #new{
+        font-size: 60%;
+    }
+
+    .title h2{
+        font-size: 150%;
+        margin-left: 57%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .userRoles-container{
+        width: 80%;
+        margin: 0% 14%;
+    }
+
+    .userRoles-list{
+        width: 100%;
+    }
+
+    .search input{
+        font-size: 85%;
+    }
+
+    .userRoles-list th{
+        font-size: 90%;
+    }
+
+    .userRoles-list td{
+        font-size: 75%;
+    }
+
+    #assigned-users{
+        width: 40%;
+    }
+
+    #btn{
+        font-size: 85%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px) {
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 40%;
+    }
+
+    .button{
+        float: right;
+        margin-right: 7%;
+        margin-top: 3%;
+    }
+
+    #new{
+        font-size: 80%;
+    }
+
+    .title h2{
+        font-size: 170%;
+        margin-left: 60%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .userRoles-container{
+        width: 80%;
+        margin: 0% 13%;
+    }
+
+    .userRoles-list{
+        width: 100%;
+    }
+
+    .search input{
+        font-size: 85%;
+    }
+
+    .userRoles-list th{
+        font-size: 100%;
+    }
+
+    .userRoles-list td{
+        font-size: 85%;
+    }
+
+    #assigned-users{
+        width: 30%;
+    }
+
+    #btn{
+        font-size: 95%;
+    }
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px) {
+    
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 30%;
+    }
+
+    .button{
+        float: right;
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+
+    #new{
+        font-size: 80%;
+    }
+
+    .title h2{
+        font-size: 200%;
+        margin-left: 50%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .userRoles-container{
+        width: 85%;
+        margin: 0% 10%;
+    }
+
+    .userRoles-list{
+        width: 100%;
+    }
+
+    .search input{
+        font-size: 100%;
+    }
+
+    .userRoles-list th{
+        font-size: 100%;
+    }
+
+    .userRoles-list td{
+        font-size: 90%;
+    }
+
+    #assigned-users{
+        width: 30%;
+    }
+
+    #btn{
+        font-size: 95%;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+    
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 25%;
+    }
+
+    .button{
+        float: right;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+
+    #new{
+        font-size: 80%;
+    }
+
+    .title h2{
+        font-size: 200%;
+        margin-left: 50%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .userRoles-container{
+        width: 85%;
+        margin: 0% 9.5%;
+    }
+
+    .userRoles-list{
+        width: 100%;
+    }
+
+    .search input{
+        font-size: 100%;
+    }
+
+    .userRoles-list th{
+        font-size: 100%;
+    }
+
+    .userRoles-list td{
+        font-size: 90%;
+    }
+
+    #assigned-users{
+        width: 25%;
+    }
+
+    #btn{
+        font-size: 95%;
+    }
+
+}

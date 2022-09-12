@@ -124,7 +124,7 @@ nav{
 }
 #action-btns{
     width: 20%;
-    padding-left: 52px;
+    /* padding-left: 52px; */
 }
 
 p {
@@ -171,7 +171,7 @@ p {
     /* border-color: #000000; */
     background-color: #C4C4C4;
     /* border-style: solid; */
-    width: 75px;
+    width: 40%;
 } 
 
 #btn-prev,
@@ -181,7 +181,7 @@ p {
     border-color: #000000;
     background-color: #fff;
     border-style: solid;
-    width: 75px;
+    width: 43%;
 }
 
 /*FOOTER*/
@@ -211,4 +211,245 @@ footer{
     position: absolute;
     right: 0px;
     margin-right: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 50%;
+    }
+
+    .button{
+        float: right;
+        margin: 3% 2%;
+    }
+
+    .title h2{
+        font-size: 150%;
+        margin: 8% 0px 5% 20%;
+        width: 100%;
+    }
+
+    .faqs-table{
+        margin: 0% 10%;
+        width: 88%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+        font-size: 85%;
+    }
+
+    #answer p{
+        width: 100%;
+        font-size: 85%;
+    }
+
+    #action-btns{
+        width: 30%;
+    }
+
+    #btn{
+        width: 40%;
+        font-size: 85%;
+    }
+
+    #page{
+        font-size: 70%
+    }
+
+    #btn-prev, #btn-next{
+        font-size: 85%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 40%;
+    }
+
+    .button{
+        float: right;
+        margin: 3% 4%;
+    }
+
+    .title h2{
+        font-size: 150%;
+        margin: 8% 1% 5% 22%;
+        width: 100%;
+    }
+
+    .faqs-table{
+        margin: 1% 8%;
+        width: 88%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    #answer p{
+        width: 100%;
+        font-size: 90%;
+    }
+
+    .faq-list #action-btns {
+        width: 30%;
+        padding-left: 7%;
+    }
+
+    #btn{
+        width: 27%;
+    }
+
+    #page{
+        font-size: 80%
+    }
+
+    #btn-prev, #btn-next{
+        width: 35%;
+        font-size: 90%;
+    }
+
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px) {
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 30%;
+    }
+
+    .button{
+        float: right;
+        margin: 3% 4%;
+    }
+
+    .title h2{
+        font-size: 180%;
+        margin: 8% 1% 5% 22%;
+        width: 100%;
+    }
+
+    .faqs-table{
+        margin: 1% 8%;
+        width: 88%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+        font-size: 100%;
+    }
+
+    #answer p{
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .faq-list #action-btns {
+        width: 30%;
+        padding-left: 7%;
+    }
+
+    #btn{
+        width: 27%;
+    }
+
+    #page{
+        font-size: 80%
+    }
+
+    #btn-prev, #btn-next{
+        width: 30%;
+    }
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 30%;
+    }
+
+    .button{
+        float: right;
+        margin: 3% 4%;
+    }
+
+    .title h2{
+        font-size: 200%;
+        margin: 8% 1% 5% 22%;
+        width: 100%;
+    }
+
+    .faqs-table{
+        margin: 1% 8%;
+        width: 88%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    p{
+        width: 100%;
+        font-size: 100%;
+    }
+
+    #answer p{
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .faq-list #action-btns {
+        width: 30%;
+        padding-left: 9%;
+    }
+
+    #btn{
+        width: 22%;
+    }
+
+    #page{
+        font-size: 80%
+    }
+
+    #btn-prev, #btn-next{
+        width: 22%;
+    }
 }

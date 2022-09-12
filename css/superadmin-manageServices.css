@@ -189,3 +189,260 @@ footer{
     right: 0px;
     margin-right: 20px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 50%;
+    }
+
+    .button{
+        float: right;
+        margin-right: 3%;
+        margin-top: 4%;
+    }
+
+    #new{
+        font-size: 60%;
+    }
+
+    .title h2{
+        font-size: 150%;
+        margin: 20% 0px 13% 52%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .services-list{
+        width: 86%;
+        margin: 0 11%;
+    }
+
+    #services{
+        width: 67%;
+    }
+
+    #title{
+        font-size: 75%;
+    }
+
+    #action-btns{
+        width: 35%;
+        padding-left: 8%;
+    }
+
+    #btn{
+        width: 30%;
+        font-size: 85%;
+    }
+
+    #page{
+        font-size: 70%
+    }
+
+    #btn-prev, #btn-next{
+        font-size: 85%;
+    }    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 40%;
+    }
+
+    .button{
+        float: right;
+        /* margin: 3% 8%; */
+        margin-right: 8%;
+        margin-top: 4%;
+    }
+
+    #new{
+        font-size: 70%;
+    }
+
+    .title h2{
+        font-size: 180%;
+        margin: 20% 0px 13% 63%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .services-list{
+        width: 80%;
+        margin: 0% 12%;
+    }
+
+    #services{
+        width: 67%;
+    }
+
+    #title{
+        font-size: 100%;
+    }
+
+    #action-btns{
+        width: 40%;
+        padding-left: 11%;
+    }
+
+    #btn{
+        width: 20%;
+        font-size: 100%;
+        margin: auto auto auto 0;
+    }
+
+    #page{
+        font-size: 100%
+    }
+
+    #btn-prev, #btn-next{
+        font-size: 90%;
+    }    
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 30%;
+    }
+
+    .button{
+        float: right;
+        margin: 4% 5%;
+    }
+
+    .title h2{
+        font-size: 200%;
+        margin: 20% 0px 13% 57%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .services-list{
+        width: 85%;
+        margin: 0% 10%;
+    }
+
+    #services{
+        width: 70%;
+        font-size: 110%;
+    }
+
+    #title{
+        font-size: 100%;
+
+    }
+
+    #action-btns{
+        width: 40%;
+        padding-left: 11%;
+        font-size: 110%;
+    }
+
+    #btn{
+        width: 20%;
+        font-size: 100%;
+        margin: auto auto auto 0;
+    }
+
+    #page{
+        font-size: 100%
+    }
+
+    #btn-prev, #btn-next{
+        font-size: 100%;
+    } 
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+
+    body{
+        width: 100%;
+    }
+
+    body header .leftArea img{
+        width: 30%;
+    }
+
+    .button{
+        float: right;
+        margin: 3% 5%;
+
+    }
+
+    .title h2{
+        font-size: 200%;
+        margin: 20% 0px 13% 60%;
+        width: 100%;
+    }
+
+    table{
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .services-list{
+        width: 85%;
+        margin: 0% 10%;
+    }
+
+    #services{
+        width: 70%;
+        font-size: 110%;
+    }
+
+    #title{
+        font-size: 100%;
+
+    }
+
+    #action-btns{
+        width: 40%;
+        padding-left: 11%;
+        font-size: 110%;
+    }
+
+    #btn{
+        width: 16%;
+        font-size: 100%;
+        margin: auto auto auto 0;
+    }
+
+    #page{
+        font-size: 100%
+    }
+
+    #btn-prev, #btn-next{
+        font-size: 100%;
+    } 
+    
+}
