@@ -70,8 +70,8 @@ label{
 section input{
     padding: 10px;
     font-size: 15px;
-    /* flex-grow: 1; */
-    /* min-width: 75%; */
+    flex-grow: 1;
+    min-width: 100%;
     display: flex;
 } 
 
@@ -83,7 +83,7 @@ section input{
 section{
     display: flex;
     margin-top: 25px;
-    /* gap: 9%; */
+    gap: 8%;
     flex-grow: 1;
 }
 
