@@ -71,7 +71,8 @@ section input{
     padding: 10px;
     font-size: 15px;
     /* flex-grow: 1; */
-    min-width: 75%;
+    /* min-width: 75%; */
+    display: flex;
 } 
 
 .input-first-name,
@@ -82,7 +83,7 @@ section input{
 section{
     display: flex;
     margin-top: 25px;
-    gap: 9%;
+    /* gap: 9%; */
     flex-grow: 1;
 }
 
@@ -189,95 +190,14 @@ br{
     margin: 5px 16%;
 }
 
-#fname{
+/* #fname{
     flex: 50%;
 }
 
 #lname{
     flex: 50%;
-}
+} */
 /* MEDIA QUERIES */
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .register{
-        width: 60%;
-        margin: 0 18%;
-    }
-
-    /* #fname, 
-    #lname{
-        flex: 100%;
-    } */
-
-    section input{
-        flex-grow: 1;
-        flex-shrink: 1;
-        min-width: 100%;
-    }
-
-    section{
-        gap: 10%;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    
-
-    .content img{
-        width: 80%;
-        margin: 30px 0 15px 8%;
-    }
-    .register{
-        width: 75%;
-        margin: 10px 12% 10px 10%;
-
-    }
-
-    label{
-        font-size: 10px;
-        margin-left: 10%;
-    }
-
-    input, 
-    #fname,
-    #lname {
-        padding: 7px;
-        font-size: 12px;
-        width: 75.5%;
-        margin-left: 10%;
-        margin-top: 5px;
-    }
-
-    .input-last-name{
-        margin-top: 15px;
-    }
-
-    .register h3{
-        font-size: 20px;
-    
-    }
-
-    #checkbox{
-        width: 5%
-    }
-
-    #terms{
-        font-size: 10px;
-    }
-
-    .terms-and-conditions{
-        margin: 5px 5%;
-    }
-
-    #register{
-        padding: 10px 33% 10px 33%;
-        margin-left: 10%;
-    }
-
-    section{
-        flex-direction: column;
-    }
-}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -331,4 +251,83 @@ br{
     section{
         flex-direction: column;
     }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+
+    .content img{
+        width: 70%;
+        margin: 2% auto;
+    }
+    .register{
+        width: 65%;
+        margin: 0 auto;
+
+    }
+
+    label{
+        font-size: 70%;
+        margin-left: 10%;
+    }
+
+    input, 
+    #fname,
+    #lname {
+        padding: 7px;
+        font-size: 85%;
+        width: 75.5%;
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+
+    .input-last-name{
+        margin-top: 15px;
+    }
+
+    .register h3{
+        font-size: 165%;
+    
+    }
+
+    #checkbox{
+        width: 5%
+    }
+
+    #terms{
+        font-size: 10px;
+    }
+
+    .terms-and-conditions{
+        margin: 5px 5%;
+    }
+
+    #register{
+        width: 81%;
+        padding: 2% 0 2% 0;
+        margin: 1% 9%;
+    }
+
+    section{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .register{
+        width: 60%;
+        margin: 0 18%;
+    }
+
+    /* #email, 
+    #password,
+    #cpassword{
+        width: 85%;
+    }
+
+    #fname,
+    #lname{
+        width: 50%;
+    } */
+
 }

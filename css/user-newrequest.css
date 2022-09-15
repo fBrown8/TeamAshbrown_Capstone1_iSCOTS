@@ -108,7 +108,7 @@ select{
 .input-block,
 .options{
     flex-basis: 100px;
-    margin: 5px;
+    /* margin: 1% */
 }
 
 .btn-grp{
@@ -124,6 +124,13 @@ select{
     padding: 10px 150px;
     cursor: pointer;
     font-size: 13px;
+}
+
+.input-block #fname, 
+.input-block #lname, 
+.input-block #email{
+    background-color: #EAEAEA;
+    border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .upload{
@@ -153,4 +160,706 @@ footer{
     position: absolute;
     right: 0px;
     margin-right: 20px;
+}
+
+
+body{ 
+    height:100vh; 
+    margin:0; 
+}
+
+header{ 
+    min-height:50px;   
+    background-color: #262626
+
+}
+
+footer{ 
+    min-height: 50px; 
+    background-color: #262626
+}
+
+/* Trick */
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+footer{
+  margin-top:auto; 
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    
+
+    .container-fluid img{
+        width: 70%;
+    }
+
+    .header{
+        margin: 3% 0 3% 0;
+    }
+
+    .header h2{
+        width: 100%;
+        font-size: 120%;
+        margin: 0 auto;
+    }
+
+    .form-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .button{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .input-block,
+    .form-group{
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    section{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button, input, optgroup, select{
+        height: 35px;
+        padding: 1%;
+    }
+
+
+    label{
+        font-size: 90%;
+    }
+
+    .input-block,
+    .options{
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 90%;
+    }
+
+    #subject{
+        padding: 2%;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 2%;
+    }
+
+    #submit{
+        width: 50%;
+        padding: 2% 0 2% 0;
+        font-size: 70%;
+    }
+
+   .upload .form-control{
+        font-size: 75%;
+        height: 30px;
+    }
+
+    #return{
+        font-size: 60%;
+        /* margin-right: -18%; */
+    }
+    
+
+    #department option,
+    #category option{
+        font-size: 70%;
+        font-family: 'Montserrat';
+    }
+
+    /* FOOTER */
+    .footer-content img{
+        width: 27%;
+    }
+
+    .credits{
+        font-size: 35%;
+        margin: 2%;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+
+    .container-fluid img{
+        width: 60%;
+    }
+
+    .header{
+        margin: 3% 0 3% 0;
+    }
+
+    .header h2{
+        width: 100%;
+        font-size: 140%;
+        margin: 0 auto;
+    }
+
+    .form-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .button{
+        margin-left: 0;
+        /* width: 100%; */
+        margin-top: -1%;
+        float: right;
+        font-size: 110%;
+    }
+
+    .input-block,
+    .form-group{
+        flex-basis: auto;
+        width: 100%;
+        margin: 1%;
+    }
+
+    section{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button, input, optgroup, select{
+        height: 35px;
+        padding: 1%;
+    }
+
+
+    label{
+        font-size: 90%;
+    }
+
+    .input-block,
+    .options{
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 90%;
+    }
+
+    #subject{
+        padding: 2%;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 2%;
+    }
+
+    #submit{
+        width: 50%;
+        padding: 1% 0 1% 0;
+        font-size: 70%;
+    }
+
+   .upload .form-control{
+        font-size: 75%;
+        height: 30px;
+    }
+
+    #return{
+        font-size: 60%;
+        /* margin-right: -18%; */
+    }
+    
+
+    #department option,
+    #category option{
+        font-size: 70%;
+        font-family: 'Montserrat';
+    }
+
+    /* FOOTER */
+    .footer-content img{
+        width: 25%;
+    }
+
+    .credits{
+        font-size: 50%;
+        margin: 2%;
+    }
+
+    footer{
+        min-height: 60px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .service-request-form{
+        width: 85%;
+        margin: 5% auto;
+    }
+
+    .container-fluid img{
+        width: 40%;
+    }
+
+    .header{
+        margin: 0% 0 3% 0;
+    }
+
+    .header h2{
+        width: 100%;
+        font-size: 160%;
+        margin: 0 auto;
+    }
+
+    .form-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .button{
+        margin-left: 0;
+        /* width: 100%; */
+        margin-top: -1%;
+        float: right;
+        font-size: 110%;
+    }
+
+    .input-block,
+    .form-group{
+        flex-basis: auto;
+        width: 100%;
+        margin: 1%;
+    }
+
+    section{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button, input, optgroup, select{
+        height: 35px;
+        padding: 1%;
+    }
+
+
+    label{
+        font-size: 100%;
+    }
+
+    .input-block,
+    .options{
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 90%;
+    }
+
+    #subject{
+        padding: 2%;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 2%;
+    }
+
+    #submit{
+        width: 50%;
+        padding: 1% 0 1% 0;
+        font-size: 80%;
+    }
+
+   .upload .form-control{
+        font-size: 75%;
+        height: 30px;
+    }
+
+    #return{
+        font-size: 60%;
+        font-size: 60%;
+        /* margin-right: -18%; */
+    }
+    
+
+    #department option,
+    #category option{
+        font-size: 90%;
+        font-family: 'Montserrat';
+    }
+
+    /* FOOTER */
+    .footer-content img{
+        width: 20%;
+    }
+
+    .credits{
+        font-size: 50%;
+        margin: 2%;
+    }
+
+    footer{
+        min-height: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px){
+
+    .service-request-form{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .container-fluid img{
+        width: 40%;
+    }
+
+    .header{
+        margin: 0% 0 3% 0;
+    }
+
+    .header h2{
+        width: 100%;
+        font-size: 180%;
+        margin: 0 auto;
+    }
+
+    .form-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .button{
+        margin-left: 0;
+        /* width: 100%; */
+        margin-top: 0%;
+        float: right;
+        font-size: 110%;
+    }
+
+    .input-block,
+    .form-group{
+        flex-basis: auto;
+        width: 100%;
+        margin: 1%;
+    }
+
+    section{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button, input, optgroup, select{
+        height: 35px;
+        padding: 1%;
+    }
+
+
+    label{
+        font-size: 100%;
+    }
+
+    .input-block,
+    .options{
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 90%;
+    }
+
+    #subject{
+        padding: 1%;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 1%;
+    }
+
+    #submit{
+        width: 50%;
+        padding: 1% 0;
+        font-size: 90%;
+    }
+
+   .upload .form-control{
+        font-size: 75%;
+        height: 30px;
+    }
+
+    #return{
+        font-size: 75%;
+        /* margin-right: -18%; */
+    }
+    
+
+    #department option,
+    #category option{
+        font-size: 100%;
+        font-family: 'Montserrat';
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-content img{
+        width: 16%;
+    }
+
+    .credits{
+        font-size: 60%;
+        margin: 1%;
+    }
+
+    footer{
+        min-height: 60px;
+    }
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px){
+
+    .service-request-form{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .container-fluid img{
+        width: 30%;
+    }
+
+    .header{
+        margin: 0% 0 3% 0;
+    }
+
+    .header h2{
+        width: 100%;
+        font-size: 190%;
+        margin: 0 auto;
+    }
+
+    .form-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .button{
+        margin-left: 0;
+        /* width: 100%; */
+        margin-top: 0%;
+        float: right;
+        font-size: 120%;
+    }
+
+    .input-block,
+    .form-group{
+        flex-basis: auto;
+        width: 100%;
+        margin: 1%;
+    }
+
+    section{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button, input, optgroup, select{
+        height: 40px;
+        padding: 1%;
+    }
+
+
+    label{
+        font-size: 100%;
+    }
+
+    .input-block,
+    .options{
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 100%;
+    }
+
+    #subject{
+        padding: 1%;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 1%;
+    }
+
+    #submit{
+        width: 50%;
+        padding: 0;
+        font-size: 100%;
+    }
+
+   .upload .form-control{
+        font-size: 75%;
+        height: 30px;
+    }
+
+    #return{
+        font-size: 75%;
+        /* margin-right: -18%; */
+    }
+    
+
+    #department option,
+    #category option{
+        font-size: 100%;
+        font-family: 'Montserrat';
+    }
+
+    /* FOOTER */
+    .footer-content img{
+        width: 12%;
+    }
+
+    .credits{
+        font-size: 60%;
+        margin: 1%;
+    }
+
+    footer{
+        min-height: 70px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+
+    .service-request-form{
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .container-fluid img{
+        width: 30%;
+    }
+
+    .header{
+        margin: 0% 0 3% 0;
+    }
+
+    .header h2{
+        width: 100%;
+        font-size: 210%;
+        margin: 0 auto;
+    }
+
+    .form-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .button{
+        margin-left: 0;
+        /* width: 100%; */
+        margin-top: 0%;
+        float: right;
+        font-size: 140%;
+    }
+
+    .input-block,
+    .form-group{
+        flex-basis: auto;
+        width: 100%;
+        margin: 1%;
+    }
+
+    section{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button, input, optgroup, select{
+        height: 40px;
+        padding: 1%;
+    }
+
+
+    label{
+        font-size: 100%;
+    }
+
+    .input-block,
+    .options{
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 110%;
+    }
+
+    #subject{
+        padding: 1%;
+    }
+
+    textarea{
+        width: 100%;
+        padding: 1%;
+    }
+
+    #submit{
+        width: 50%;
+        padding: 0;
+        font-size: 100%;
+    }
+
+   .upload .form-control{
+        font-size: 75%;
+        height: 30px;
+    }
+
+    #return{
+        font-size: 75%;
+        /* margin-right: -18%; */
+    }
+    
+
+    #department option,
+    #category option{
+        font-size: 100%;
+        font-family: 'Montserrat';
+    }
+
+    /* FOOTER */
+    .footer-content img{
+        width: 15%;
+    }
+
+    .credits{
+        font-size: 60%;
+        margin: 1%;
+    }
+
+    footer{
+        min-height: 70px;
+    }
 }

@@ -56,3 +56,168 @@
 .no-email{
     font-size: 13px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    
+    .content img{
+        width: 90%;
+        margin: 2% auto 2%;
+    }
+    .verify{
+        width: 70%;
+        margin: 5% auto;
+    }
+
+    .verify h3{
+        font-size: 100%;
+    }
+
+    .verify p{
+        font-size: 80%;
+    }
+
+    #resend-email{
+        padding: 3% 1%;
+        width: 85%;
+        font-size: 75%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .content img{
+        width: 70%;
+        margin: 2% auto 2%;
+    }
+    .verify{
+        width: 60%;
+        margin: 2% auto;
+    }
+
+    .verify h3{
+        font-size: 150%;
+    }
+
+    .verify p{
+        font-size: 100%;
+    }
+
+    #resend-email{
+        padding: 3% 1%;
+        width: 85%;
+        font-size: 95%;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .content img{
+        width: 50%;
+        margin: 2% auto 1%;
+    }
+    .verify{
+        width: 40%;
+        margin: 3% auto;
+    }
+
+    .verify h3{
+        font-size: 150%;
+    }
+
+    .verify p{
+        font-size: 100%;
+    }
+
+    #resend-email{
+        padding: 2% 1%;
+        width: 85%;
+        font-size: 95%;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px) {
+
+    .content img{
+        width: 45%;
+        margin: 2% auto 1%;
+    }
+    .verify{
+        width: 35%;
+        margin: 2% auto;
+    }
+
+    .verify h3{
+        font-size: 150%;
+    }
+
+    .verify p{
+        font-size: 100%;
+    }
+
+    #resend-email{
+        padding: 2% 1%;
+        width: 85%;
+        font-size: 95%;
+    }
+    
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px) {
+
+    .content img{
+        width: 40%;
+        margin: 2% auto 1%;
+    }
+    .verify{
+        width: 35%;
+        margin: 2% auto;
+    }
+
+    .verify h3{
+        font-size: 150%;
+    }
+
+    .verify p{
+        font-size: 100%;
+    }
+
+    #resend-email{
+        padding: 2% 1%;
+        width: 85%;
+        font-size: 95%;
+    }
+    
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+    .content img{
+        width: 35%;
+        margin: 2% auto 1%;
+    }
+    .verify{
+        width: 30%;
+        margin: 2% auto;
+    }
+
+    .verify h3{
+        font-size: 150%;
+    }
+
+    .verify p{
+        font-size: 100%;
+    }
+
+    #resend-email{
+        padding: 2% 1%;
+        width: 85%;
+        font-size: 95%;
+    }
+    
+}
+

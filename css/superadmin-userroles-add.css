@@ -211,16 +211,16 @@ label #menuBtn:hover{
     justify-content: space-between;
 }
 
-.container,
+/* .container,
 #role-details{
 	position: absolute;
 	left: 60%;
-}
+} */
 
-#role-details{
+/* #role-details{
 	width: 287px;
     margin-right: 40px;
-}
+} */
 
 .container .form-check{
 	margin-bottom: 5px;
@@ -250,4 +250,185 @@ label #menuBtn:hover{
     cursor: pointer;
     font-size: 13px;
     border: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	body{
+		width: 100%;
+	}
+
+	body header .leftArea img{
+		width: 50%;
+	}
+
+	.titleBar h1{
+		width: 100%;
+		font-size: 170%;
+	}
+
+	.role-details, .permissions{
+		width: 100%;
+	}
+
+	.title{
+		font-size: 110%;
+	}
+
+	.input-block{
+		width: 40%;
+		/* margin-right: 5%; */
+	}
+
+	#role-details{
+		width: 100%;
+	}
+
+	.role-desc,
+	.perm{
+		width: 45%;
+	}
+
+	.text-muted{
+		font-size: 95%;
+	}
+
+	.permissions .container{
+		width: 48%;
+		font-size: 90%;
+		margin: 1% 0 0 0;
+	}
+
+	
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px) {
+	
+	body header .leftArea img{
+		width: 40%;
+	}
+
+	.title{
+		font-size: 110%;
+	}
+
+	.titleBar h1{
+		margin-left: 4%;
+	}
+
+	.role-details, .permissions{
+		width: 90%;
+		margin: 1% 4%;
+	}
+
+	.role-desc, 
+	.perm{
+		width: 50%;
+	}
+
+	.text-muted{
+		font-size: 100%;
+	}
+
+	.permissions .container,
+	.input-block{
+		width: 40%;
+	}
+
+	#role-details{
+		width: 100%;
+	}
+
+	.btn-grp{
+		margin-right: 6%;
+	}
+
+	
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px) {
+	
+	body header .leftArea img{
+		width: 30%;
+	}
+
+	.title{
+		font-size: 120%;
+	}
+
+	.titleBar h1{
+		margin-left: 4%;
+	}
+
+	.role-details, .permissions{
+		width: 90%;
+		margin: 1% 4%;
+	}
+
+	.role-desc, 
+	.perm{
+		width: 50%;
+	}
+
+	.text-muted{
+		font-size: 110%;
+	}
+
+	.permissions .container,
+	.input-block{
+		width: 40%;
+	}
+
+	#role-details{
+		width: 100%;
+	}
+
+	.btn-grp{
+		margin-right: 6%;
+	}
+
+	
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+	body header .leftArea img{
+		width: 30%;
+	}
+
+	.title{
+		font-size: 120%;
+	}
+
+	.titleBar h1{
+		margin-left: 4%;
+	}
+
+	.role-details, .permissions{
+		width: 90%;
+		margin: 1% 4%;
+	}
+
+	.role-desc, 
+	.perm{
+		width: 50%;
+	}
+
+	.text-muted{
+		font-size: 110%;
+	}
+
+	.permissions .container,
+	.input-block{
+		width: 40%;
+	}
+
+	#role-details{
+		width: 100%;
+	}
+
+	.btn-grp{
+		margin-right: 6%;
+	}
+	
 }

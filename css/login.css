@@ -95,169 +95,271 @@ br{
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 320px) and (max-width: 480px){
     .content img{
-        width: 45%;
-        margin: 30px 5% 15px 25%;
+        width: 90%;
+        margin: 5% auto;
     }
 
     .login{
-        width: 35%;
-        margin: 0 10% 0 31%;
-    }
-
-    label{
-        margin-left: 8.5%;
-    }
-    
-    input{
-        margin: 0px 5% 0px 8.5%;
-    }
-
-    #login{
-        padding: 10px 39% 10px 39%;
-        margin: 0 7% 10px 8.3%;
-    }
-
-    #forgotPW{
-        float: right;
-        padding: 0;
-        margin-right: 8%;
-    }
-
-    #email{
-        margin-top: 4px;
-    }
-    
-}
-
-@media screen and (min-width: 1025px) {
-    .content img{
-        width: 45%;
-        margin: 30px 5% 15px 25%;
-    }
-
-    .login{
-        width: 35%;
-        margin: 0 10% 0 31%;
-    }
-
-    label{
-        margin-left: 8.5%;
-    }
-    
-    input{
-        margin: 0px 5% 0px 8.5%;
-    }
-
-    #login{
-        padding: 10px 39% 10px 39%;
-        margin: 0 7% 10px 8.3%;
-    }
-
-    #forgotPW{
-        float: right;
-        padding: 0;
-        margin-right: 8%;
-    }
-    
-}
-
-@media screen and (max-width: 1024px) {
-    .content img{
-        width: 61%;
-        margin: 30px 5% 15px 18%;
-    }
-
-    .login{
-        width: 50%;
-        margin: 0 24% 0 24%;
-    }
-
-    label{
-        margin-left: 8.5%;
-    }
-    
-    input{
-        margin: 0px 5% 0px 8.5%;
-    }
-
-    #login{
-        padding: 10px 40% 10px 36%;
-        margin: 0 7% 10px 8.3%;
-    }
-
-    #forgotPW{
-        float: right;
-        padding: 0;
-        margin-right: 8%;
-    }
-
-    #email{
-        margin-top: 4px;
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .content img{
         width: 70%;
-        margin: 30px 5% 15px 13%;
+        margin: 0 auto;
     }
 
-    .login{
-        width: 60%;
-        margin: 0 15% 0 19%;
-    }
-
-    label{
-        margin-left: 7%;
-    }
-    
-    input{
-        margin: 0px 5% 0px 7%;
-    }
-
-    #login{
-        padding: 10px 38% 10px 38%;
-        margin: 0 7% 10px 7%;
-    }
-
-    #forgotPW{
-        float: right;
-        padding: 0;
-        margin-right: 8%;
-    }
-    
-}
-
-@media screen and (max-width: 480px){
-    .content img{
-        width: 85%;
-        margin: 30px 20px 15px 18px;
-    }
-
-    .login{
-        width: 75%;
-        margin: 0 10% 0 10%;
+    .login h3{
+        font-size: 125%;
     }
 
     label{
         margin-left: 5%;
+        font-size: 80%;
     }
     
     input{
-        margin: 0px 5% 0px 6%;
+        margin: 0px 5% 3% 6%;
+        height: 12px;
+        font-size: 85%;
     }
 
     #login{
-        padding: 10px 37% 10px 38%;
+        padding: 3% 5%;
         margin: 0 6% 10px 6%;
+        width: 90%;
     }
 
     #forgotPW{
         float: right;
         padding: 0;
         margin-right: 7%;
+        font-size: 65%;
     }
+
+   .no-acc{
+    font-size: 100%;
+   }
+}
+
+@media screen and  (min-width: 481px) and (max-width: 768px) {
+    .content img{
+        width: 70%;
+        margin: 3% auto;
+    }
+
+    .login{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .login h3{
+        font-size: 150%;
+    }
+
+    label{
+        margin-left: 5%;
+        font-size: 85%;
+    }
+    
+    input{
+        margin: 0px 5% 3% 6%;
+        height: 14px;
+        font-size: 90%;
+    }
+
+    #login{
+        padding: 2% 5%;
+        margin: 0 6% 10px 6%;
+        width: 85%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 7%;
+        font-size: 75%;
+    }
+
+   .no-acc{
+    font-size: 110%;
+   }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .content img{
+        width: 60%;
+        margin: 2% auto;
+    }
+
+    .login{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .login h3{
+        font-size: 160%;
+    }
+
+    label{
+        margin-left: 5%;
+        font-size: 85%;
+    }
+    
+    input{
+        margin: 0px 5% 3% 6%;
+        height: 14px;
+        font-size: 100%;
+    }
+
+    #login{
+        padding: 2% 5%;
+        margin: 0 6% 10px 6%;
+        width: 84%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 7%;
+        font-size: 75%;
+    }
+
+   .no-acc{
+    font-size: 120%;
+   }
+    
+}
+
+@media screen and (min-width: 1025px)  and (max-width: 1290px){
+    .content img{
+        width: 45%;
+        margin: 2% auto;
+    }
+
+    .login{
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .login h3{
+        font-size: 170%;
+    }
+
+    label{
+        margin-left: 5%;
+        font-size: 95%;
+    }
+    
+    input{
+        margin: 0px 5% 3% 6%;
+        height: 16px;
+        font-size: 110%;
+    }
+
+    #login{
+        padding: 2% 5%;
+        margin: 0 6% 10px 6%;
+        width: 84%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 9%;
+        font-size: 85%;
+    }
+
+   .no-acc{
+    font-size: 130%;
+   }
+    
+}
+
+
+@media screen and (min-width: 1291px) and (max-width: 1440px) {
+    .content img{
+        width: 35%;
+        margin: 2% auto;
+    }
+
+    .login{
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .login h3{
+        font-size: 170%;
+    }
+
+    label{
+        margin-left: 5%;
+        font-size: 95%;
+    }
+    
+    input{
+        margin: 0px 5% 3% 6%;
+        height: 16px;
+        font-size: 110%;
+    }
+
+    #login{
+        padding: 2% 5%;
+        margin: 0 6% 10px 6%;
+        width: 84%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 9%;
+        font-size: 85%;
+    }
+
+   .no-acc{
+    font-size: 140%;
+   }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+   
+    .content img{
+        width: 35%;
+        margin: 2% auto;
+    }
+
+    .login{
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .login h3{
+        font-size: 170%;
+    }
+
+    label{
+        margin-left: 5%;
+        font-size: 95%;
+    }
+    
+    input{
+        margin: 0px 5% 3% 6%;
+        height: 18px;
+        font-size: 110%;
+    }
+
+    #login{
+        padding: 2% 5%;
+        margin: 0 6% 10px 6%;
+        width: 84%;
+    }
+
+    #forgotPW{
+        float: right;
+        padding: 0;
+        margin-right: 9%;
+        font-size: 85%;
+    }
+
+   .no-acc{
+    font-size: 160%;
+   }
 }
