@@ -2,18 +2,19 @@ let tixChart = document.getElementById('ticketChart').getContext('2d');
 let tixCateg = document.getElementById('categChart').getContext('2d');
 let userSatis = document.getElementById('usChart').getContext('2d');
 let serviceChart = document.getElementById("perserviceChart").getContext("2d");
+let categoryChart = document.getElementById("percategoryChart").getContext("2d");
 
 //ticket statistics per week chart
 let mixedChart = new Chart(tixChart, {
     type: 'bar',
     data: {
         datasets: [{
-            label: 'Closed Tickets',
+            label: 'Resolved Tickets',
             data: [40, 50, 120, 150, 100, 280, 75],
             backgroundColor: '#b48834',
             order: 2
         }, {
-            label: 'New Tickets',
+            label: 'Unsolved Tickets',
             data: [50, 30, 40, 20, 100, 75, 180],
             backgroundColor: '#000',
             type: 'line',
@@ -75,7 +76,43 @@ let groupedChart = new Chart(serviceChart, {
     }
   });
   
+//ticket statistics per category chart
+let dataPerCategory = new Chart(categoryChart, {
+    type: 'bar',
+    data: {
+        labels:['Ticket Category'],
+        datasets: [{
+            label: 'Student Inquiries',
+            data: [65],
+            backgroundColor: '#ffd492'
+        },{
+            label: 'Student Grievances',
+            data: [54],
+            backgroundColor: '#e4aa5c'
+        },
+        {
+            label: 'Enrollment Concerns',
+            data: [64],
+            backgroundColor: '#B48834'
+        },
+        {
+            label: 'Others',
+            data: [65],
+            backgroundColor: '#340a10'
+        }]
+    },
+    options:{
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Total Number of Tickets Per Service'
+            }
+        }
+    }
+ });
 
+/*
 //tickets by category chart
 const doughnutChart = new Chart(categChart, {
     type: 'doughnut',
@@ -105,7 +142,7 @@ const doughnutChart = new Chart(categChart, {
         responsive: true
     }
 });
-
+*/
 
 //user satisfaction chart
 let barChart = new Chart(userSatis, {

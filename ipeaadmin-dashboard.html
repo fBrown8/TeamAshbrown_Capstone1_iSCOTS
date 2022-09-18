@@ -131,6 +131,9 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="perservice-tab" data-bs-toggle="tab" data-bs-target="#per-service" type="button" role="tab" aria-controls="profile" aria-selected="false">Per Service</button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="percategory-tab" data-bs-toggle="tab" data-bs-target="#per-category" type="button" role="tab" aria-controls="profile" aria-selected="false">All Services</button>
+                    </li>
                 </ul>
 
                 <div class="tab-content" id="ticketTabContent">
@@ -143,6 +146,12 @@
                     <div class="tab-pane fade" id="per-service" role="tabpanel" aria-labelledby="perservice-tab">
                         <div class="graphs" id="tix-stat">
                             <canvas id="perserviceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="per-category" role="tabpanel" aria-labelledby="percategory-tab">
+                        <div class="graphs" id="tix-stat">
+                            <canvas id="percategoryChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -160,6 +169,7 @@
                         <canvas id="categChart"></canvas>
                     </div>
                 </div>
+
                 <div class="cards" id="sts">
                     <span>USER SATISFACTION</span>
                     <div class="graphs" id="tix-stat">
