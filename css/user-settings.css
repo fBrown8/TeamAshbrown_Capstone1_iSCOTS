@@ -181,7 +181,7 @@ form .user-details .input-box,
 @media screen and (min-width:320px) and (max-width: 480px){
 
     .container-fluid img{
-        width: 81%;
+        width: 15rem;
     }
 
     .container-content {
@@ -289,7 +289,7 @@ form .user-details .input-box,
 
 @media screen and (min-width: 481px) and (max-width: 768px){
     .container-fluid img{
-        width: 70%;
+        width: 20rem;
     }
 
     .container-content {
@@ -398,7 +398,7 @@ form .user-details .input-box,
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .container-fluid img{
-        width: 50%;
+        width: 25rem;
     }
 
     .container-content {
@@ -508,7 +508,7 @@ form .user-details .input-box,
 @media screen and (min-width: 1025px) and (max-width: 1290px){
 
     .container-fluid img{
-        width: 40%;
+        width: 25rem;
     }
 
     .container-content {

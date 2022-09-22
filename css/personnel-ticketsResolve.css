@@ -297,7 +297,7 @@ footer{
 @media screen and (min-width: 768px) and (max-width: 1024px){
 
     body header .leftArea img{
-        width: 50%
+        width: 25rem
     }
 
     .form-content{
@@ -381,7 +381,7 @@ footer{
 @media screen and (min-width: 1025px) and (max-width: 1290px){
 
     body header .leftArea img{
-        width: 40%
+        width: 25rem
     }
 
     .form-content{
@@ -465,7 +465,7 @@ footer{
 @media screen and (min-width: 1291px) and (max-width: 1440px){
 
     body header .leftArea img{
-        width: 30%
+        width: 30rem
     }
 
     .form-content{
@@ -549,7 +549,7 @@ footer{
 @media screen and (min-width: 1441px) and (max-width: 1920px){
 
     body header .leftArea img{
-        width: 25%
+        width: 30rem
     }
 
     .form-content{

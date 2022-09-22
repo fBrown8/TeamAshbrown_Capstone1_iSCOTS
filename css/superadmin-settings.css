@@ -179,7 +179,7 @@ form .user-details .input-box,
 
 @media screen and (min-width:400px) and (max-width: 768px){
     header .leftArea img {
-        width: 80%;
+        width: 15rem;
         margin-top: -15px;
     }
 
@@ -235,7 +235,7 @@ form .user-details .input-box,
 @media screen and (min-width: 769px) and (max-width: 900px){
     
     header .leftArea img {
-        width: 70%;
+        width: 20rem;
         margin-top: -15px;
     }
 
@@ -290,7 +290,7 @@ form .user-details .input-box,
 @media screen and (min-width: 901px) and (max-width: 1290px){
 
     header .leftArea img{
-        width: 35%;
+        width: 25rem;
     }
 
     .container-content .title{
@@ -306,7 +306,7 @@ form .user-details .input-box,
 @media screen and (min-width: 1291px) and (max-wdith: 1440px){
 
     header .leftArea img{
-        width: 35%;
+        width: 30rem;
     }
 
     .container-content .title{
@@ -320,7 +320,7 @@ form .user-details .input-box,
 
 @media screen and (min-width: 1441px) and (max-width: 1920px){
     header .leftArea img{
-        width: 25%;
+        width: 30rem;
     }
 
     .container-content{
