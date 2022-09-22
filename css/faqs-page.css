@@ -642,10 +642,10 @@ br{
         font-size: 70%;
     }
 
-    body{ 
+    /* body{ 
         height:100vh; 
         margin:0; 
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     header{ 
@@ -654,17 +654,17 @@ br{
 
     footer{ 
         min-height:50px; 
-    }
+    } */
 
     /* Trick */
-    body{ 
+    /* body{ 
         display:flex; 
         flex-direction:column; 
     }
 
     footer{
         margin-top:auto; 
-    }
+    } */
 
     .search-box input{
         font-size: 20px;
@@ -729,7 +729,7 @@ br{
     .accordion{
         width: 80%;
         margin: auto;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     footer{
@@ -745,10 +745,10 @@ br{
         font-size: 70%;
     }
 
-    body{ 
+    /* body{ 
         height:100vh; 
         margin:0; 
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     header{ 
@@ -757,17 +757,17 @@ br{
 
     footer{ 
         min-height:50px; 
-    }
+    } */
 
     /* Trick */
-    body{ 
+    /* body{ 
         display:flex; 
         flex-direction:column; 
     }
 
     footer{
         margin-top:auto; 
-    }
+    } */
 
     .search-box input{
         font-size: 20px;
