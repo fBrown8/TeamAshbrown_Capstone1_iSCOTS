@@ -271,16 +271,16 @@ label #menuBtn:hover{
 
 .bottom-data{
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .cards{
     padding: 10px;
-    width: 33%;
-    height: 370px;
+    width: 50%;
 }
 
 #average-resol-time{
+	margin: 10%;
     text-align: center;
 }
 
@@ -288,4 +288,10 @@ label #menuBtn:hover{
     color: #B48834;
 	font-family: 'Montserrat';
 	font-weight: 500;
+}
+
+.slaPie{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }

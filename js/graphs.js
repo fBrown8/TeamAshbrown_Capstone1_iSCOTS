@@ -1,8 +1,10 @@
 let tixChart = document.getElementById('ticketChart').getContext('2d');
-let tixCateg = document.getElementById('categChart').getContext('2d');
 let userSatis = document.getElementById('usChart').getContext('2d');
 let serviceChart = document.getElementById("perserviceChart").getContext("2d");
 let categoryChart = document.getElementById("percategoryChart").getContext("2d");
+let slaChartHigh = document.getElementById("slaHighPrioChart").getContext("2d");
+let slaChartMed = document.getElementById("slaMedPrioChart").getContext("2d");
+let slaChartLow = document.getElementById("slaLowPrioChart").getContext("2d");
 
 //ticket statistics per week chart
 let mixedChart = new Chart(tixChart, {
@@ -112,37 +114,143 @@ let dataPerCategory = new Chart(categoryChart, {
     }
  });
 
-/*
-//tickets by category chart
-const doughnutChart = new Chart(categChart, {
-    type: 'doughnut',
+//ticket statistics SLA High Priority
+let dataHigh = new Chart(slaChartHigh, {
+    type: 'pie',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green'],
+        labels: ['Resolved Within SLA', 'Resolved Outside SLA'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5],
+            data: [83, 20],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)'
+                'rgba(255, 99, 132, 0.2)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(255, 99, 132, 1)'
             ],
             borderWidth: 1
         }]
     },
+    plugins: [ChartDataLabels],
     options: {
-        responsive: true
+        responsive: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'High Priority Level Tickets'
+            },
+            tooltips: {
+                enabled: false
+            },
+            datalabels:{
+                formatter: (value, context) => {
+                    const datapoints = context.chart.data.datasets[0].data;
+                    function totalSum(total, datapoint){
+                        return total + datapoint;
+                    }
+                    const totalvalue = datapoints.reduce(totalSum, 0);
+                    const percentageValue = (value / totalvalue * 100).toFixed(1);
+                    const display = [`${percentageValue}%`]
+                    
+                    return display;
+                }
+            }
+        } 
     }
 });
-*/
+
+//ticket statistics SLA Med Priority
+let dataMed = new Chart(slaChartMed, {
+    type: 'pie',
+    data: {
+        labels: ['Resolved Within SLA', 'Resolved Outside SLA'],
+        datasets: [{
+            data: [85, 10],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    plugins: [ChartDataLabels],
+    options: {
+        responsive: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Medium Priority Level Tickets'
+            },
+            tooltips: {
+                enabled: false
+            },
+            datalabels:{
+                formatter: (value, context) => {
+                    const datapoints = context.chart.data.datasets[0].data;
+                    function totalSum(total, datapoint){
+                        return total + datapoint;
+                    }
+                    const totalvalue = datapoints.reduce(totalSum, 0);
+                    const percentageValue = (value / totalvalue * 100).toFixed(1);
+                    const display = [`${percentageValue}%`]
+                    
+                    return display;
+                }
+            }
+        }
+    }
+});
+
+//ticket statistics SLA Low Priority
+let dataLow = new Chart(slaChartLow, {
+    type: 'pie',
+    data: {
+        labels: ['Resolved Within SLA', 'Resolved Outside SLA'],
+        datasets: [{
+            data: [167, 5],
+            backgroundColor: [
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 99, 132, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    plugins: [ChartDataLabels],
+    options: {
+        responsive: false,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Low Priority Level Tickets'
+            },
+            tooltips: {
+                enabled: false
+            },
+            datalabels:{
+                formatter: (value, context) => {
+                    const datapoints = context.chart.data.datasets[0].data;
+                    function totalSum(total, datapoint){
+                        return total + datapoint;
+                    }
+                    const totalvalue = datapoints.reduce(totalSum, 0);
+                    const percentageValue = (value / totalvalue * 100).toFixed(1);
+                    const display = [`${percentageValue}%`]
+                    
+                    return display;
+                }
+            }
+        }
+    }
+});
 
 //user satisfaction chart
 let barChart = new Chart(userSatis, {
