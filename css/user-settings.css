@@ -176,6 +176,31 @@ form .user-details .input-box,
     font-size: 1px;
 }
 
+/* FOOTER */
+body{ 
+    height:100vh; 
+    margin:0; 
+    /* overflow: scroll; */
+}
+
+header{ 
+    min-height:50px; 
+}
+
+footer{ 
+    min-height:50px; 
+}
+
+    /* Trick */
+    body{ 
+        display:flex; 
+        flex-direction:column; 
+    }
+
+    footer{
+        margin-top:auto; 
+    }
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width:320px) and (max-width: 480px){

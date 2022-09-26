@@ -269,6 +269,8 @@ br{
     padding: 20px 30px;
 }
 
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
     .navbar{
@@ -276,7 +278,7 @@ br{
     }
 
     body .container-fluid img{
-        width: 50%;
+        width: 15rem;
     }
 
     .header-container{
@@ -313,7 +315,7 @@ br{
     .accordion{
         width: 100%;
         margin: auto;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     footer{
@@ -332,7 +334,7 @@ br{
     body{ 
         height:100vh; 
         margin:0; 
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     header{ 
@@ -362,12 +364,12 @@ br{
     }
 
     footer .footer-content img {
-        width: 6rem;
+        width: 7rem;
         margin-left: 1%;
     }
 
     footer .credits{
-        font-size: 0.3rem;
+        font-size: 0.4rem;
         margin: 2%;
     }
 }
@@ -379,7 +381,7 @@ br{
     }
 
     body .container-fluid img{
-        width: 50%;
+        width: 20rem;
     }
 
     .header-container{
@@ -416,7 +418,7 @@ br{
     .accordion{
         width: 80%;
         margin: auto;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     footer{
@@ -485,7 +487,7 @@ br{
     }
 
     body .container-fluid img{
-        width: 45%;
+        width: 25rem;
     }
 
     .header-container{
@@ -522,7 +524,7 @@ br{
     .accordion{
         width: 80%;
         margin: auto;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     footer{
@@ -549,7 +551,7 @@ br{
     }
 
     footer{ 
-        min-height:50px; 
+        min-height:60px; 
     }
 
     /* Trick */
@@ -576,8 +578,8 @@ br{
     }
 
     footer .credits{
-        font-size: 0.5rem;
-        margin: 2%;
+        font-size: 0.6rem;
+        margin: 1%;
     }
 
 }
@@ -589,7 +591,7 @@ br{
     }
 
     body .container-fluid img{
-        width: 30%;
+        width: 25rem;
     }
 
     .header-container{
@@ -626,7 +628,7 @@ br{
     .accordion{
         width: 80%;
         margin: auto;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
 
     footer{
@@ -653,7 +655,7 @@ br{
     }
 
     footer{ 
-        min-height:50px; 
+        min-height:60px; 
     }
 
     /* Trick */
@@ -675,12 +677,12 @@ br{
     }
 
     footer .footer-content img {
-        width: 12rem;
+        width: 11rem;
         margin-left: 1%;
     }
 
     footer .credits{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         margin: 1%;
     }
 }
@@ -692,7 +694,7 @@ br{
     }
 
     body .container-fluid img{
-        width: 35%;
+        width: 30rem;
     }
 
     .header-container{
@@ -756,7 +758,7 @@ br{
     }
 
     footer{ 
-        min-height:50px; 
+        min-height:70px; 
     }
 
     /* Trick */
@@ -778,12 +780,12 @@ br{
     }
 
     footer .footer-content img {
-        width: 12rem;
+        width: 13rem;
         margin-left: 1%;
     }
 
     footer .credits{
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         margin: 1%;
     }
 
@@ -795,7 +797,7 @@ br{
     }
 
     body .container-fluid img{
-        width: 30%;
+        width: 30rem;
     }
 
     .header-container{
@@ -832,7 +834,7 @@ br{
     .accordion{
         width: 80%;
         margin: auto;
-        /* overflow: scroll; */
+        overflow: scroll;
         height: 100%;
     }
 
@@ -860,7 +862,7 @@ br{
     }
 
     footer{ 
-        min-height:50px; 
+        min-height:70px; 
     }
 
     /* Trick */
@@ -883,12 +885,12 @@ br{
     }
 
     footer .footer-content img {
-        width: 11rem;
+        width: 15rem;
         margin-left: 1%;
     }
 
     footer .credits{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
         margin: 1%;
     }
 }

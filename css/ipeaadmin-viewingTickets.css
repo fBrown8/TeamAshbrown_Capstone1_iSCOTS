@@ -233,6 +233,12 @@ select{
 }
 
 
+#remarks{
+    font-family: 'Montserrat';
+    padding: 1%;
+}
+
+
 /*FOOTER*/
 footer{
     background-color: #262626;
