@@ -286,11 +286,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 27%;
+        width: 7rem;
     }
 
     .credits{
-        font-size: 35%;
+        font-size: 0.4rem;
         margin: 2%;
     }
 
@@ -392,17 +392,14 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 25%;
+        width: 9rem;
     }
 
     .credits{
-        font-size: 50%;
+        font-size: 0.5rem;
         margin: 2%;
     }
 
-    footer{
-        min-height: 60px;
-    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
@@ -507,12 +504,12 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 20%;
+        width: 11rem;
     }
 
     .credits{
-        font-size: 50%;
-        margin: 2%;
+        font-size: 0.6rem;
+        margin: 1%;
     }
 
     footer{
@@ -623,11 +620,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 16%;
+        width: 11rem;
     }
 
     .credits{
-        font-size: 60%;
+        font-size: 0.6rem;
         margin: 1%;
     }
 
@@ -737,11 +734,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 12%;
+        width: 13rem;
     }
 
     .credits{
-        font-size: 60%;
+        font-size: 0.7rem;
         margin: 1%;
     }
 
@@ -850,11 +847,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 15%;
+        width: 15rem;
     }
 
     .credits{
-        font-size: 60%;
+        font-size: 0.8rem;
         margin: 1%;
     }
 

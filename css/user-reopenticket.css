@@ -336,11 +336,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 27%;
+        width: 7rem;
     }
 
     .credits{
-        font-size: 35%;
+        font-size: 0.4rem;
         margin: 2%;
     }
 
@@ -451,16 +451,12 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 25%;
+        width: 9rem;
     }
 
     .credits{
-        font-size: 50%;
+        font-size: 0.5rem;
         margin: 2%;
-    }
-
-    footer{
-        min-height: 60px;
     }
 }
 
@@ -574,16 +570,16 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 25%;
+        width: 11rem;
     }
 
     .credits{
-        font-size: 50%;
-        margin: 2%;
+        font-size: 0.6rem;
+        margin: 1%;
     }   
 
     footer{
-        min-height: 70px;
+        min-height: 60px;
     }
 }
 
@@ -697,11 +693,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 16%;
+        width: 11%;
     }
 
     .credits{
-        font-size: 60%;
+        font-size: 0.6rem;
         margin: 1%;
     }   
 
@@ -820,11 +816,11 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 16%;
+        width: 13rem;
     }
 
     .credits{
-        font-size: 60%;
+        font-size: 0.7rem;
         margin: 1%;
     }   
 
@@ -921,8 +917,8 @@ footer{
 
     #submit{
         width: 50%;
-        padding: 1% 0%;
-        font-size: 90%;
+        padding: 0.5%;
+        font-size: 100%;
     }
 
    .upload .form-control{
@@ -943,18 +939,14 @@ footer{
 
     /* FOOTER */
     .footer-content img{
-        width: 15%;
+        width: 15rem;
     }
 
     .credits{
-        font-size: 60%;
+        font-size: 0.8rem;
         margin: 1%;
     }   
-
-    /* .footer-content{
-        min-height: 70px;
-    } */
-
+    
     footer{
         min-height: 70px;
     }
