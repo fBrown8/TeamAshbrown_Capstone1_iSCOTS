@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content{
+    margin: auto;
+}
+
+.content img{
+    width: 30rem;
+    display: block;
+    margin: 30px auto 15px auto;
+}
+
+.forgot{
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 35% 0 35%;
+    box-shadow: -5px 5px 20px #b5b5b5;
+}
+
+.forgot h3{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.forgot hr{
+    width: 60%;
+    border: none;
+    height: 1px;
+    background-color: #000;
+    opacity: 30%;
+}
+
+.input-block{
+    margin-top: 20px;
+}
+
+input, label{
+    display: block;
+    font-family: 'Montserrat';
+    margin-left: 25px;
+}
+
+input{
+    padding: 10px;
+    font-size: 15px;
+    width: 80%;
+}
+
+label{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#email{
+    margin-bottom: 10px;
+}
+
+br{
+    clear: both;
+}
+
+.note{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+    color: #858585;
+}
+
+#sendlink{
+    background-color: #262626;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 65px;
+    cursor: pointer;
+}
+
+.btn-group{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
+    
+    .content img{
+        width: 90%;
+        margin: 2% auto 2%;
+    }
+
+    .forgot{
+        width: 70%;
+        margin: 5% auto;
+    }
+
+    .forgot h3{
+        font-size: 100%;
+    }
+
+    input, 
+    label{
+        margin-left: 6%;
+    }
+
+    input{
+        padding: 3%;
+        font-size: 70%;
+        width: 80%;
+    }
+    
+    label{
+        font-size: 70%;
+    }
+
+    .btn-group{
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    #sendlink{
+        padding: 2% 0 2% 0;
+        width: 85%;
+        font-size: 70%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .content img{
+        width: 70%;
+        margin: 2% auto 1%;
+    }
+
+    .forgot{
+        width: 60%;
+        margin: 2% auto;
+    }
+
+    .forgot h3{
+        font-size: 150%;
+    }
+
+    input, 
+    label{
+        margin-left: 6%;
+    }
+
+    input{
+        padding: 3%;
+        font-size: 90%;
+        width: 80%;
+    }
+    
+    label{
+        font-size: 80%;
+    }
+
+    #email{
+        margin: 0 auto 5%;
+    }
+
+    .btn-group{
+        width: 100%;
+        margin: 3% auto;
+    }
+
+    #sendlink{
+        padding: 2% 0 2% 0;
+        width: 87%;
+        font-size: 90%;
+    }
+
+    .note{
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .content img{
+        width: 55%;
+        margin: 2% auto 1%;
+    }
+
+    .forgot{
+        width: 50%;
+        margin: 3% auto;
+    }
+
+    .forgot h3{
+        font-size: 150%;
+    }
+
+    input, 
+    label{
+        margin-left: 6%;
+    }
+
+    input{
+        padding: 2%;
+        font-size: 100%;
+        width: 83%;
+    }
+    
+    label{
+        font-size: 80%;
+    }
+
+    #email{
+        margin: 0 auto 5%;
+    }
+
+    .btn-group{
+        width: 100%;
+        margin: 6% auto;
+    }
+
+    #sendlink{
+        padding: 2% 0 2% 0;
+        width: 87%;
+        font-size: 90%;
+    }
+
+    .note{
+        font-size: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px) {
+    
+    .content img{
+        width: 50%;
+        margin: 2% auto 1%;
+    }
+
+    .forgot{
+        width: 45%;
+        margin: 2% auto;
+    }
+
+    .forgot h3{
+        font-size: 150%;
+    }
+
+    input, 
+    label{
+        margin-left: 6%;
+    }
+
+    input{
+        padding: 2%;
+        font-size: 100%;
+        width: 83%;
+    }
+    
+    label{
+        font-size: 100%;
+    }
+
+    #email{
+        margin: 0 auto 5%;
+    }
+
+    .btn-group{
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    #sendlink{
+        padding: 2% 0 2% 0;
+        width: 85%;
+        font-size: 90%;
+    }
+
+    .note{
+        font-size: 90%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width: 1290px) and (max-width: 1440px) {
+    
+    .content img{
+        width: 35%;
+        margin: 2% auto 1%;
+    }
+
+    .forgot{
+        width: 35%;
+        margin: 2% auto;
+    }
+
+    .forgot h3{
+        font-size: 150%;
+    }
+
+    input, 
+    label{
+        margin-left: 6%;
+    }
+
+    input{
+        padding: 2%;
+        font-size: 100%;
+        width: 83%;
+    }
+    
+    label{
+        font-size: 100%;
+    }
+
+    #email{
+        margin: 0 auto 5%;
+    }
+
+    .btn-group{
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    #sendlink{
+        padding: 2% 0 2% 0;
+        width: 85%;
+        font-size: 90%;
+    }
+
+    .note{
+        font-size: 90%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+    .content img{
+        width: 35%;
+        margin: 2% auto 1%;
+    }
+
+    .forgot{
+        width: 35%;
+        margin: 2% auto;
+    }
+
+    .forgot h3{
+        font-size: 150%;
+    }
+
+    input, 
+    label{
+        margin-left: 6%;
+    }
+
+    input{
+        padding: 2%;
+        font-size: 100%;
+        width: 83%;
+    }
+    
+    label{
+        font-size: 100%;
+    }
+
+    #email{
+        margin: 0 auto 5%;
+    }
+
+    .btn-group{
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    #sendlink{
+        padding: 2% 0 2% 0;
+        width: 85%;
+        font-size: 90%;
+    }
+
+    .note{
+        font-size: 90%;
+        margin-top: 4%;
+    }
+    
+}
