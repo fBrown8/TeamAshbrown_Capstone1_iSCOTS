@@ -1,0 +1,118 @@
+#submit{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding: 0px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-color: #808080;
+    width: 90%;
+    height: 43px;
+    border-radius: 0rem;
+    box-shadow: none;
+    /* padding-right: 50px ; */
+}
+
+#down{
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: none;
+    border-radius: 0rem;
+    height: 43px;
+}
+
+#down:hover .dropdown-menu{
+    display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+   #submit{
+    width: 95%;
+    font-size: 65%;
+   }
+
+   #down{
+    font-size: 65%;
+   }
+
+   #forward-ticket{
+    font-size: 65%;
+    height: 43px;
+   }
+   
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px) {
+    
+    #submit{
+     width: 95%;
+     font-size: 75%;
+    }
+ 
+    #down{
+     font-size: 75%;
+    }
+ 
+    #forward-ticket{
+     font-size: 75%;
+     height: 43px;
+    }
+    
+ }
+
+ @media screen and (min-width: 1291px) and (max-width: 1440px) {
+    
+    #submit{
+     width: 95%;
+     font-size: 85%;
+    }
+ 
+    #down{
+     font-size: 85%;
+    }
+ 
+    #forward-ticket{
+     font-size: 85%;
+     height: 43px;
+    }
+    
+ }
+
+ @media screen and (min-width: 1291px) and (max-width: 1440px) {
+    
+    #submit{
+     width: 95%;
+     font-size: 85%;
+    }
+ 
+    #down{
+     font-size: 85%;
+    }
+ 
+    #forward-ticket{
+     font-size: 85%;
+     height: 43px;
+    }
+    
+ }
+
+ @media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+    #submit{
+     width: 95%;
+     font-size: 85%;
+    }
+ 
+    #down{
+     font-size: 85%;
+    }
+ 
+    #forward-ticket{
+     font-size: 85%;
+     height: 43px;
+    }
+    
+ }
