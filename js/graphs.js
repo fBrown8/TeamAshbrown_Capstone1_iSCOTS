@@ -5,6 +5,7 @@ let categoryChart = document.getElementById("percategoryChart").getContext("2d")
 let slaChartHigh = document.getElementById("slaHighPrioChart").getContext("2d");
 let slaChartMed = document.getElementById("slaMedPrioChart").getContext("2d");
 let slaChartLow = document.getElementById("slaLowPrioChart").getContext("2d");
+let slaPerService = document.getElementById("slaservice").getContext("2d");
 
 //ticket statistics per week chart
 let mixedChart = new Chart(tixChart, {
@@ -251,6 +252,50 @@ let dataLow = new Chart(slaChartLow, {
         }
     }
 });
+
+//ticket statistics SLA per service
+Chart.register(ChartjsPluginStacked100.default);
+
+let SLAPerService = {
+    labels: ["Student Inquiries", "Student Grievances", "Enrollment Concerns", "Others"], //types of services
+    datasets: [{
+      label: "Resolved within SLA",
+      backgroundColor: ['rgba(54, 162, 235, 0.2)'],
+      borderColor: ['rgba(54, 162, 235, 1)'],
+      borderWidth: 1,
+      data: [13, 7, 4, 9]
+    }, {
+      label: "Resolved Outside SLA",
+      backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+      borderColor: ['rgba(255, 99, 132, 1)'],
+      borderWidth: 1,
+      data: [14, 3, 5, 8]
+    }]
+  };
+
+let slaGroupedChart = new Chart(slaPerService, {
+    type: 'bar',
+    data: SLAPerService,
+    options: {
+      barValueSpacing: 20,
+      scales: {
+        yAxes: [{
+          ticks: {
+            min: 0,
+          }
+        }]
+      },
+      plugins: {
+        stacked100:{
+            enable: true
+        },
+        title: {
+            display: true,
+            text: 'Service-Level Agreement per Service'
+        }
+    }
+    }
+  });
 
 //user satisfaction chart
 let barChart = new Chart(userSatis, {

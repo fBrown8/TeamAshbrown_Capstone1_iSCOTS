@@ -240,6 +240,7 @@ label #menuBtn:hover{
     margin-top: 30px;
     width: 12%;
     font-size: 13px;
+    border: none;
 }
 
 .title{
@@ -288,11 +289,6 @@ footer{
 
 @media screen and (min-width: 768px) and (max-width:1024px){
 
-    body header .leftArea img{
-        width: 50%;
-
-    }
-
     .title h2 {
         font-size: 150%;
         margin: 5% 0px 5% 30%;
@@ -323,10 +319,6 @@ footer{
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1290px) {
-    body header .leftArea img{
-        width: 55%;
-
-    }
 
     .title h2 {
         font-size: 170%;
@@ -362,11 +354,6 @@ footer{
 }
 
 @media screen and (min-width: 1291px) and (max-width: 1440px){
-
-    body header .leftArea img{
-        width: 37%;
-    }
-    
     .title h2{
         font-size: 180%;
     }
@@ -379,11 +366,6 @@ footer{
 }  
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-
-    body header .leftArea img{
-        width: 30%;
-    }
-
     .title h2{
         font-size: 200%;
     }
