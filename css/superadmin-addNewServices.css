@@ -291,6 +291,7 @@ label #menuBtn:hover{
     margin-top: 30px;
     width: 12%;
     font-size: 13px;
+    border: none;
 }
 
 .title{

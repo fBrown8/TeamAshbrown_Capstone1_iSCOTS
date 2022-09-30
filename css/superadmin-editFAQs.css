@@ -300,6 +300,7 @@ label #menuBtn:hover{
     margin-top: 30px;
     width: 12%;
     font-size: 13px;
+    border: none;
 }
 
 .title{
@@ -368,7 +369,7 @@ footer{
     }
 
     .edit-container{
-        margin: 0% 14%;
+        margin: 0% 14% 5%;
         width: 80%;
     }
 
@@ -410,7 +411,7 @@ footer{
     }
 
     .edit-container{
-        margin: 0% 14%;
+        margin: 0% 13% 5%;
         width: 80%;
     }
 
@@ -451,7 +452,7 @@ footer{
     }
 
     .edit-container{
-        margin: 0% 12%;
+        margin: 0% 12% 5%;
         width: 100%;
         max-width: 80%;
     }
@@ -495,7 +496,7 @@ footer{
     }
 
     .edit-container{
-        margin: 0% 12%;
+        margin: 0% 12% 5% 12%;
         width: 100%;
         max-width: 80%;
     }
