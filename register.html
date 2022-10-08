@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f7f6ac6a49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/register2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <title>Register | iSCOTS</title>
+</head>
+<body>
+    <div class="form">
+        <div class="content">
+
+            <div class="header">
+                <img src="/img/black.png" alt="I-SCoTS logo">
+            </div>
+
+            <div class="register">
+                <header>Register</header>
+                <hr>
+
+                <div class="name">
+                    <div class="input-block" style = "flex-grow: 1;">
+                        <label for="fname">First Name<span style="color: red;">*</span></label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                    </div>
+    
+                    <div class="input-block" style="flex-grow: 1;">
+                        <label for="lname">Last Name<span style="color: red;">*</span></label>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                    </div>
+    
+                </div>
+
+                <div class="input-block">
+                    <label for="email">UST Email<span style="color: red;">*</span></label>
+                    <input type="text" name="email" id="email" placeholder="UST Email" required>
+                </div>
+
+                <div class="new-pw">
+                    <div class="input-block">
+                        <label for="password">Enter New Password <span style="color: red;">*</span></label>
+                        <input type="password" onkeyup="trigger()" name="input-text" id="password" placeholder="Password" required>
+                    </div>
+    
+                    <div class="indicator">
+                        <span class = "weak">1</span>
+                        <span class = "medium">2</span>
+                        <span class = "strong">3</span>
+                    </div>
+                    <div class="password-status">
+                        Password Strength: Weak
+                    </div>
+                </div>
+                
+
+                <div class="input-block">
+                    <label for="confirm-newpw">Confirm New Password <span style="color: red;">*</span></label>
+                    <input type="password" name="input-text" id="confirm-newpw" placeholder="Confirm New Password" required>
+                </div>
+
+                <div class="terms-and-conditions">
+                    <input type="checkbox" id="checkbox" required>
+                   <label for="checkbox" id="terms">I have read and agreed to the <a href="#" style="color: #1e88e5; text-decoration: none;"> terms and conditions</a></label>
+                </div>
+
+                <div class="match-pass" id = "message" style="text-align: center;"></div>
+
+                <div class="register-btn" style="text-align: center;">
+                    <button type="submit" id="register">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "js/indicator.js"></script>
+    <script src = "js/pw-validation.js"></script>
+    
+</body>
+</html>
