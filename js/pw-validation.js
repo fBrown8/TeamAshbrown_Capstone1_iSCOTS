@@ -8,12 +8,13 @@ function validatePassword(){
 
     if(password.length != 0){
         if(password == confrmPassword){
-            message.textContent = "Passwords Match"; 
+            // message.textContent = "Passwords Match"; 
             alert("Success! You have successfully changed your password.")
             // message.style.color = "#26D054";
         }
         else{
-            message.textContent = "Passwords do not match.";
+            // message.textContent = "Passwords do not match.";
+            alert("Passwords do not match. Please try again.")
             // message.style.color = "#EA4335";
         }
     }

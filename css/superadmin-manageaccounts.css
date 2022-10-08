@@ -306,7 +306,12 @@ table{
     font-family: 'Montserrat';
     font-size: 13px;
 }
-  
+
+#email{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 .app-list tbody tr {
     border-bottom: 1px solid #dddddd;
 }
@@ -323,4 +328,34 @@ table{
 .action-buttons button{
     border: none;
     padding: 5px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+	header .leftArea img{
+		width: 25rem;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1290px){
+
+	header .leftArea img{
+		width: 25rem;
+	}
+}
+
+@media screen and (min-width: 1291px) and (max-width: 1440px){
+
+	header .leftArea img{
+		width: 30rem;
+	}
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px){
+
+	header .leftArea img{
+		width: 30rem;
+	}
 }
