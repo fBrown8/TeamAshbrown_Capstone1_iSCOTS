@@ -308,5 +308,3 @@ let barChart = new Chart(userSatis, {
         responsive: true
     }
 });
-
- 
